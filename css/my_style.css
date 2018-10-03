@@ -9,19 +9,8 @@ a:active {
     text-decoration: none;
 }
 
-.alt1 {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 12px 14px;
-}
-
-.alt1-1 {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 6px 8px;
-    margin: -2px;
-}
-
 .alt2 {
-    background-color: rgba(20, 20, 20, 0.9);
+    background-color: rgba(20, 20, 20, 0.95);
     border-radius: 0 0 10px 10px;
     margin: -2px 10px 0px;
     border: solid 2px #000;
@@ -33,7 +22,7 @@ a:active {
 }
 
 .jumboBGImage {
-    background-image: url("../img/env1.jpg");
+    background-image: url("../img/cubic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -54,9 +43,100 @@ a:active {
    -1px  1px 0 #000,
     1px  1px 0 #000,
     4px 4px 1px #000;
+    font-variant: small-caps;
 }
 
 .jumboTextSmall {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
+}
+
+.customButton {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border-color: transparent;
+    box-shadow: 0 4px 0 -1px #fff;
+}
+
+.boxStyle1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    border-style: hidden hidden dotted;
+    border-color: #000;
+    border-width: 2px;
+    font-variant: small-caps;
+    margin-bottom: 16px;
+}
+
+.cardStyle {
+    max-width: 32%;
+    min-width: 31.98%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #000;
+    margin: 0 4px 8px;
+}
+
+.cardStyle p {
+    text-align: center;
+    padding: 4px 0 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.cardIcon {
+    max-width: 100px;
+    max-height: 100px;
+    background-size: cover;
+    margin: -8px 0 4px;
+}
+.cardIconRuby {
+    background-image: url("../img/rubyLogo.png");
+}
+.cardIconHTML {
+    background-image: url("../img/htmlLogo.png");
+}
+.cardIconCSS3 {
+    background-image: url("../img/css3Logo.png");
+}
+.cardIconCSharp {
+    background-image: url("../img/csharpLogo.png");
+}
+.cardIconJavaS {
+    background-image: url("../img/javaSLogo.png");
+}
+
+.xpBar {
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 2px #000;
+    margin: 0 0 0 8px;
+}
+
+@media (min-width:768px) {
+    .alt1 {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 12px 14px;
+        border: solid 2px #000;
+    }
+    .cardIcon {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .alt1 {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 6px 8px;
+        margin: -2px;
+        border: solid 2px #000;
+    }
+    .cardIcon {
+        width: 50px;
+        height: 50px;
+    }
 }
