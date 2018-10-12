@@ -74,9 +74,6 @@ a:active {
 .clbLinked {
     background-image: url("../img/linkedLogo.png");
 }
-.clbNewG {
-  background-image: url("../img/newGLogo.png");
-}
 
 .linkIcon {
     max-width: 90px;
@@ -99,7 +96,6 @@ a:active {
     border-radius: 8px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
     margin: 0 4px 8px;
-    height: 100%;
 }
 
 .cardStyle p {
@@ -115,22 +111,7 @@ a:active {
     max-width: 100px;
     max-height: 100px;
     background-size: cover;
-    margin: -8px auto 8px;
-    background-color: rgba(255, 255, 255, 0.2); 
-    border: solid 1px rgba(0, 0, 0, 0.4);
-    background-repeat: no-repeat;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    border-radius: 4px;
-  }
-.cardIcon:hover {
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  border: solid 1px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.6); 
-}
-.cardIcon:active {
-  box-shadow: inset 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.1);
+    margin: -8px 0 4px;
 }
 .cardIconRuby {
     background-image: url("../img/rubyLogo.png");
@@ -147,21 +128,13 @@ a:active {
 .cardIconJavaS {
     background-image: url("../img/javaSLogo.png");
 }
-.custBadgeEmpty,
-.custBadgeFilled {
-  color: transparent;
-  margin: 0 -3px;
-  border: solid 1px rgb(52, 58, 64);
-  border-radius: 0;
-}
-.custBadgeEmpty {
-  background-color: transparent;
-}
-.beginBar {
-  border-radius: 6px 0px 0px 6px;
-}
-.endBar {
-  border-radius: 0px 6px 6px 0px;
+
+.xpBar {
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 2px #000;
+    margin: 0 0 0 8px;
 }
 
 @media (min-width:768px) {
@@ -169,6 +142,10 @@ a:active {
         background-color: rgba(0, 0, 0, 0.7);
         padding: 12px 14px;
         border: solid 2px #000;
+    }
+    .cardIcon {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -179,6 +156,10 @@ a:active {
         margin: -2px;
         border: solid 2px #000;
     }
+    .cardIcon {
+        width: 50px;
+        height: 50px;
+    }
     .cardText {
         text-align: center;
         font-size: 0.8em
@@ -186,23 +167,15 @@ a:active {
 }
 
 @media (min-width: 607px) {
-  .cardStyle {
-      max-width: 32%;
-      min-width: 31.98%;
-  }
-  .cardIcon {
-    width: 100px;
-    height: 100px;
-  }
+    .cardStyle {
+        max-width: 32%;
+        min-width: 31.98%;
+    }
 }
 
 @media (max-width: 606.99px) {
-  .cardStyle {
-      max-width: 48%;
-      min-width: 31.98%;
-  }
-  .cardIcon {
-    width: 80px;
-    height: 80px;
-  }
+    .cardStyle {
+        max-width: 40%;
+        min-width: 31.98%;
+    }
 }
