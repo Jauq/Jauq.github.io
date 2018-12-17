@@ -92,7 +92,16 @@ a:active {
     border-color: #000;
     border-width: 2px;
     font-variant: small-caps;
+    margin: 16px 0;
+}
+
+.boxStyleSubTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
     margin-bottom: 16px;
+    border-style: hidden double;
+    border-color: #b0b0b0;
+    padding: 0 36px;
 }
 
 .cardStyle {
@@ -223,6 +232,20 @@ a:active {
   border-radius: 0px 6px 6px 0px;
 }
 
+.customFooter {
+    width: auto;
+    height: auto;
+    margin: 16px 0 0;
+    padding: 22px 0 13px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-image: url("../img/gradi2.png");
+    background-repeat: repeat-x;
+    background-size: 256px;
+    background-position: bottom;
+}
+
 @media (min-width:768px) {
     .alt1 {
         background-color: rgba(0, 0, 0, 0.7);
@@ -245,23 +268,26 @@ a:active {
 }
 
 @media (min-width: 607px) {
-  /*.cardStyle {
-      max-width: 32%;
-      min-width: 31.98%;
-  }*/
-  .cardIcon {
+    /*.cardStyle {
+        max-width: 32%;
+        min-width: 31.98%;
+    }*/
+    .cardIcon {
     width: 100px;
     height: 100px;
-  }
+    }
 }
 
 @media (max-width: 606.99px) {
-  /*.cardStyle {
-      max-width: 48%;
-      min-width: 31.98%;
-  }*/
-  .cardIcon {
+    /*.cardStyle {
+        max-width: 48%;
+        min-width: 31.98%;
+    }*/
+    .cardIcon {
     width: 80px;
     height: 80px;
-  }
+    }
+    .boxStyleSubTitle {
+        border-style: hidden;
+    }
 }
