@@ -24,6 +24,7 @@
                             <a class="btn btn-outline-light customButton" href="#home" role="button">Home</a>
                             <a class="btn btn-outline-light customButton" href="#skills" role="button">Programming Skills</a>
                             <a class="btn btn-outline-light customButton" href="#software" role="button">Software Skills</a>
+                            <a class="btn btn-outline-light customButton" href="#projects" role="button">Projects</a>
                             <a class="btn btn-outline-light customButton" href="#contact" role="button">Contact</a>
                         </nav>
                     </div>
@@ -47,6 +48,16 @@
         </div>
         <!-- cubic.jpg, bg image, downloded from here https://www.maxpixel.net/Cubic-Design-Geometric-Square-Shape-Cube-3d-1002897 -->
         <!-- /Jumbotron -->
+
+        <!--Use this to tell people buttons work.-->
+        <div class="alert alert-warning alert-dismissible customDissmissible fade show" role="alert">
+            <strong>Hello There!</strong> You can click on the icons and images to see more
+            information about that specific skill or project.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
         <!-- Programming Skills -->
         <div class="container-fluid" id="skills">
             <div class="row justify-content-center">
@@ -390,6 +401,77 @@
 
         </div>
         <!-- /Other Software -->
+        <!-- Projects -->
+        <div class="container-fluid" id="projects">
+            <div class="row justify-content-center">
+                <div class="col-4-auto text-center boxStyle1">
+                    Projects
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-1"></div>
+                <div class="col-md-6 col-sm-10 text-center boxStyleSubTitle">
+                    These are projects that I have created. Either entirely through my own will,
+                    or by following the instructions of another.
+                </div>
+                <div class="col-md-3 col-sm-1"></div>
+            </div>
+
+            <div class="row justify-content-center projectSeps">
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="cardStyle2 text-center">
+                        <p>The Tech Academy Live Project</p>
+                        <button class="projectPic projectPicTTALP" type="button" data-toggle="collapse" data-target="#collapseTTALP" aria-expanded="false" aria-controls="collapseTTALP"></button>
+                        <div class="collapse stopSmallCaps" id="collapseTTALP">
+                            <p>
+                                This project known as "The Tech Academy Live Project" is one
+                                of the final courses in the The Tech Academy's bootcamp.
+                                <span><a target="_blank" href="https://github.com/Jauq/The-Tech-Academy/tree/master/Live%20Project">HERE</a></span>
+                                you can find my additions to the project. <br />
+                                <strong>Summary:</strong><br />
+                                The Live Project is an MVC Code-First web application. I, as well as
+                                many other attendees of the Tech Academy, used this project as a way
+                                to get experience working as a group on a singular project. We used
+                                AzureDevOps to keep the group organized, and instructors led us
+                                through what needed to be done. The project itself is an application
+                                the bootcamp uses to keep track of the hiring status of soon to be
+                                graduate attendees by tracking application statuses and overall
+                                readiness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="cardStyle2 text-center">
+                        <p>Ree - 2.5D Platformer</p>
+                        <button class="projectPic projectPicRee" type="button" data-toggle="collapse" data-target="#collapseRee" aria-expanded="false" aria-controls="collapseRee"></button>
+                        <div class="collapse stopSmallCaps" id="collapseRee">
+                            <p>
+                                This Project I call "Ree - 2.5D Platformer." It can be found
+                                <span><a target="_blank" href="https://github.com/Jauq/Ree-Prototype-3DGosuGame">HERE</a></span>
+                                <br />
+                                <strong>Summary:</strong><br />
+                                This is a game I developed from scratch using the Ruby programming
+                                language and the Gosu Engine gem. Note that I programmed the 3D engine
+                                from scratch in Gosu which is a 2D game engine, just by using some
+                                of Gosu's simpler image casting functions.
+                                I also created all of the art and animations myself.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-lg-4 col-sm-6">
+                    <div class="cardStyle2">
+                        Hi
+                    </div>
+                </div>-->
+
+            </div>
+
+        </div>
+        <!-- /Projects -->
         <!-- Contact -->
         <div class="container-fluid" id="contact">
             <div class="row justify-content-center">
@@ -399,21 +481,21 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="col text-center linkIcon">
+                <div class="col-1 text-center linkIcon">
                     <a class="btn btn-dark customLinkButton clbGithub" href="https://github.com/Jauq" target="_blank" role="button"></a>
                 </div>
-                <div class="col text-center linkIcon">
+                <div class="col-1 text-center linkIcon">
                     <a class="btn btn-dark customLinkButton clbLinked" href="https://www.linkedin.com/in/tim-anfilofieff-799645170/" target="_blank" role="button"></a>
                 </div>
-                <div class="col text-center linkIcon">
+                <div class="col-1 text-center linkIcon">
                     <a class="btn btn-dark customLinkButton clbNewG" href="https://jauqar.newgrounds.com/" target="_blank" role="button"></a>
                 </div>
 
                 <div class="w-100"></div>
 
-                <div class="col text-center linkIcon">Github</div>
-                <div class="col text-center linkIcon">LinkedIn</div>
-                <div class="col text-center linkIcon">Newgrounds</div>
+                <div class="col-1 text-center linkIcon">Github</div>
+                <div class="col-1 text-center linkIcon">LinkedIn</div>
+                <div class="col-1 text-center linkIcon">Newgrounds</div>
             </div>
         </div>
         <!-- /Contact -->
