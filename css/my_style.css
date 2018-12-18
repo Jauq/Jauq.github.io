@@ -68,6 +68,10 @@ a:active {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+.linkBox {
+    padding: 0 128px;
+}
+
 .clbGithub {
     background-image: url("../img/githubLogo.png");
 }
@@ -79,7 +83,6 @@ a:active {
 }
 
 .linkIcon {
-    max-width: 90px;
     padding: 1px 1px 3px;
     font-size: 0.9em
 }
@@ -214,62 +217,68 @@ a:active {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .cardIconRuby {
-    background-image: url("../img/rubyLogo.png");
+    background-image: url("../img/Logos/rubyLogo.png");
 }
 .cardIconHTML {
-    background-image: url("../img/htmlLogo.png");
+    background-image: url("../img/Logos/htmlLogo.png");
 }
 .cardIconCSS3 {
-    background-image: url("../img/css3Logo.png");
+    background-image: url("../img/Logos/css3Logo.png");
 }
 .cardIconCSharp {
-    background-image: url("../img/csharpLogo.png");
+    background-image: url("../img/Logos/csharpLogo.png");
 }
 .cardIconJavaS {
-    background-image: url("../img/javaSLogo.png");
+    background-image: url("../img/Logos/javaSLogo.png");
 }
 .cardIconMVS {
-    background-image: url("../img/mvsLogo.png");
+    background-image: url("../img/Logos/mvsLogo.png");
 }
 .cardIconSQL {
-    background-image: url("../img/sqlLogo.png");
+    background-image: url("../img/Logos/sqlLogo.png");
 }
 .cardIconStencyl {
-    background-image: url("../img/stencylLogo.png");
+    background-image: url("../img/Logos/stencylLogo.png");
 }
 .cardIconGitBash {
-    background-image: url("../img/gitBashLogo.png");
+    background-image: url("../img/Logos/gitBashLogo.png");
 }
 .cardIconLMMS {
-    background-image: url("../img/lmmsLogo.png");
+    background-image: url("../img/Logos/lmmsLogo.png");
 }
 .cardIconAudacity {
-    background-image: url("../img/audacityLogo.png");
+    background-image: url("../img/Logos/audacityLogo.png");
 }
 .cardIconKrita {
-    background-image: url("../img/kritaLogo.png");
+    background-image: url("../img/Logos/kritaLogo.png");
 }
 .cardIconGM2 {
-    background-image: url("../img/gm2Logo.png");
+    background-image: url("../img/Logos/gm2Logo.png");
 }
 .cardIconUnity {
-    background-image: url("../img/unityLogo.png");
+    background-image: url("../img/Logos/unityLogo.png");
 }
 .cardIconVegasPro {
-    background-image: url("../img/vegasProLogo.png");
+    background-image: url("../img/Logos/vegasProLogo.png");
 }
 .cardIconOpenOffice {
-    background-image: url("../img/openOfficeLogo.png");
+    background-image: url("../img/Logos/openOfficeLogo.png");
 }
 .cardIconUE4 {
-    background-image: url("../img/unrealLogo.png");
+    background-image: url("../img/Logos/unrealLogo.png");
 }
 
 .projectPicTTALP {
-    background-image: url("../img/TTALP.png");
+    background-image: url("../img/screenshots/TTALP.png");
 }
 .projectPicRee {
-    background-image: url("../img/Ree.png");
+    background-image: url("../img/screenshots/Ree.png");
+}
+.projectPicQFCI {
+    background-image: url("../img/screenshots/QFCI.png");
+}
+.projectPicGames {
+    background-image: url("../img/screenshots/games.png");
 }
 
 
@@ -361,5 +370,8 @@ a:active {
     }
     .boxStyleSubTitle {
         border-style: hidden;
+    }
+    .linkBox {
+        padding: 0;
     }
 }
