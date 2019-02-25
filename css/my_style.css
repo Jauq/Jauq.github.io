@@ -267,6 +267,9 @@ a:active {
 .cardIconUE4 {
     background-image: url("../img/Logos/unrealLogo.png");
 }
+.cardIconFamiTracker {
+  background-image: url("../img/Logos/famiTrackerLogo.png");
+}
 
 .projectPicTTALP {
     background-image: url("../img/screenshots/TTALP.png");
@@ -280,6 +283,10 @@ a:active {
 .projectPicGames {
     background-image: url("../img/screenshots/games.png");
 }
+.projectPicJan2019Game {
+  background-image: url("../img/screenshots/jan2019game.png");
+}
+
 
 
 .custBadgeEmpty,
