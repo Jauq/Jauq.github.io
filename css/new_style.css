@@ -1,7 +1,24 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body{
+  position: relative;
   margin: 0;
   padding: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
   background-color: #303030;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: rotateZ(0);
 }
 
 a {
@@ -15,6 +32,7 @@ a {
   border-color: #303030 #303030 #909090;
   height: 48px;
   margin: 0 0 24px;
+  z-index: 1;
 }
 
 .navBar a {
@@ -81,6 +99,10 @@ a {
   top: 4px;
 }
 
+.afterScroll {
+  z-index: 0;
+}
+
 /* Courtesy of https://www.w3schools.com/howto/howto_js_sticky_header.asp */
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -145,14 +167,34 @@ a {
   }
 }
 
-.temp {
-  height: 2300px;
+.container {
+  margin-bottom: 56px;
+}
+
+.bodyBox {
+  height: auto;
+  background-color: #1c1c1c;
+  color: #d0d0d0;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.bodyBox h1 {
+  margin: 0 0 8px;
+  text-align: center;
+  font-variant: small-caps;
+}
+.bodyBox p {
+  text-align: justify;
+}
+
+.noMargin {
+  margin: 0;
 }
 
 .footerBar {
   width: 100%;
   height: 128px;
-  margin: 24px 0 0;
   background-color: #1c1c1c;
   border-color: #e04040 #1c1c1c #303030;
   border-style: solid;
@@ -161,6 +203,12 @@ a {
   text-align: center;
   animation: colorswap 8s;
   animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
 }
 
 @keyframes colorswap {
@@ -176,7 +224,7 @@ a {
 .footerBar p {
   margin: 0;
   position: relative;
-  top: 42px;
+  top: 30px;
 }
 
 @media (max-width: 816px) {
@@ -204,11 +252,14 @@ a {
   .showSmall {
     display: block;
   }
+  .container {
+    margin-bottom: -8px;
+  }
   .footerBar {
     height: 64px;
   }
   .footerBar p {
-    top: 12px;
-
+    top: 0px;
+    font-size: 12px;
   }
 }
