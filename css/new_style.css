@@ -14,6 +14,7 @@ a {
   border-width: 8px 0 2px;
   border-color: #303030 #303030 #909090;
   height: 48px;
+  margin: 0 0 24px;
 }
 
 .navBar a {
@@ -58,9 +59,13 @@ a {
   color: #4040e0;
   border-bottom-color: #4040e0;  
 }
+.nCode {
+  color: #e0a040;
+  border-bottom-color: #e0a040;  
+}
 .nMisc {
-  color: #e0e040;
-  border-bottom-color: #e0e040;  
+  color: #a040e0;
+  border-bottom-color: #a040e0;  
 }
 
 .navObject:hover,
@@ -69,10 +74,24 @@ a {
   border-color: #d0d0d0 #d0d0d0 #d0d0d0;
   color: #d0d0d0;
   cursor: pointer;
+  margin: 0 0 24px;
 }
 
 .navObject:hover p{
   top: 4px;
+}
+
+/* Courtesy of https://www.w3schools.com/howto/howto_js_sticky_header.asp */
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .afterScroll {
+  padding-top: 72px;
 }
 
 .jumbotron {
@@ -107,7 +126,7 @@ a {
   text-align: center;
   opacity: 0;
   position: relative;
-  top: -98px;
+  top: -112px;
   left: -84px;
   padding: 0 16px;
   animation: slide 2.5s;
@@ -126,13 +145,70 @@ a {
   }
 }
 
-.noBlur {
-  filter: blur(0px);
+.temp {
+  height: 2300px;
 }
 
-@media (max-width: 500px) {
-  .navObject{
+.footerBar {
+  width: 100%;
+  height: 128px;
+  margin: 24px 0 0;
+  background-color: #1c1c1c;
+  border-color: #e04040 #1c1c1c #303030;
+  border-style: solid;
+  border-width: 2px 0 8px;
+  color: #e04040;
+  text-align: center;
+  animation: colorswap 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorswap {
+  0% {border-top-color: #e04040; color: #e04040;}
+  17% {border-top-color: #e0a040; color: #e0a040;}
+  33% {border-top-color: #40e040; color: #40e040;}
+  50% {border-top-color: #40e0a0; color: #40e0a0;}
+  67% {border-top-color: #4040e0;  color: #4040e0;}
+  83% {border-top-color: #a040e0;  color: #a040e0;}
+  100% {border-top-color: #e04040; color: #e04040;}
+}
+
+.footerBar p {
+  margin: 0;
+  position: relative;
+  top: 42px;
+}
+
+@media (max-width: 816px) {
+  .navObject {
     width: 20%;
+  }
+}
+
+@media (min-width: 537px) {
+  .hideSmall {
+    display: block;
+  }
+  .showSmall {
+    display: none;
+  } 
+}
+
+@media (max-width: 536px) {
+  .navObject {
     font-size: 12px;
+  }
+  .hideSmall {
+    display: none;
+  }
+  .showSmall {
+    display: block;
+  }
+  .footerBar {
+    height: 64px;
+  }
+  .footerBar p {
+    top: 12px;
+
   }
 }

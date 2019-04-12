@@ -31,13 +31,13 @@
     <div class="jumbotron jumbotron-fluid">
       <div class="bgImage"></div>
       <div>
-        <h1>JauqAr, The One and Only</h1>
+        <h1>JauqGames</h1>
       </div>
     </div>
     <!-- \Jumbotron -->
 
     <!-- Nav Bar -->
-    <ul class="nav justify-content-center navBar">
+    <ul id="myHeader" class="nav justify-content-center navBar">
       <a class="navObject nGames" href="#test">
         <li>
             <p>Games</p>
@@ -53,19 +53,70 @@
           <p>Art</p>
         </li>
       </a>
+      <a class="navObject nCode" href="#test4">
+        <li">
+          <p class="hideSmall">Programming</p>
+          <p class="showSmall">Code</p>
+        </li>
+      </a>
+      <a class="navObject nMisc" href="#test5">
+        <li">
+          <p class="hideSmall">Miscellaneous</p>
+          <p class="showSmall">Misc</p>
+        </li>
+      </a>
     </ul>
     <!-- \Nav Bar -->
 
-    <!-- Main Section -->
-    <div class="container">
-      <div class="row">
+    <div class="afterScroll">
 
+      <!-- Main Section -->
+      <div class="container">
+        <div class="row">
+            <div class="temp">
+                Hi, I'm 2300 pixels tall
+            </div>
+        </div>
       </div>
-    </div>
-    <!-- \Main Section -->
+      <!-- \Main Section -->
 
-    <script> </script>
-    
+      <!-- Footer -->
+      <div class="footerBar">
+          <p>&copy; Copyright <span id="giveMeDate"></span>, Tim Anfilofieff</p>
+      </div>
+      <!-- \Footer -->
+
+    </div>
+
+    <script>
+      // Courtesy of https://www.w3schools.com/howto/howto_js_sticky_header.asp
+      // When the user scrolls the page, execute myFunction 
+      window.onscroll = function() {scrolly()};
+
+      // Get the header
+      var header = document.getElementById("myHeader");
+
+      // Get the offset position of the navbar
+      var sticky = header.offsetTop;
+
+      // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function scrolly() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
+    <script>
+      function curDate() {
+        var d = new Date();
+        var n = d.getFullYear();
+        document.getElementById("giveMeDate").innerHTML = n;
+      }
+      curDate();
+    </script>
 
   </body>
 </html>
