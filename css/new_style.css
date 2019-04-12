@@ -58,6 +58,10 @@ a {
   color: #4040e0;
   border-bottom-color: #4040e0;  
 }
+.nMisc {
+  color: #e0e040;
+  border-bottom-color: #e0e040;  
+}
 
 .navObject:hover,
 .navObject:active{
@@ -69,6 +73,61 @@ a {
 
 .navObject:hover p{
   top: 4px;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 8px 0 0;
+  height: 196px;
+  background-color: #1c1c1c;
+}
+
+.bgImage {
+  width: 100%;
+  height: 196px;
+  background-image: url("../img/geofly.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 480px;
+  animation: fade 3s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  filter: blur(0px);
+}
+
+@keyframes fade {
+  from { filter: blur(0px); }
+  to { filter: blur(16px); }
+}
+
+.jumbotron h1 {
+  color: #d0d0d0;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+  position: relative;
+  top: -98px;
+  left: -84px;
+  padding: 0 16px;
+  animation: slide 2.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from { 
+    opacity: 0;
+    left: -84px;
+  }
+  to { 
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+.noBlur {
+  filter: blur(0px);
 }
 
 @media (max-width: 500px) {
