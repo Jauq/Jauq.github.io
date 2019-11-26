@@ -126,9 +126,6 @@ a {
 }
 .bodyBox img {
   max-width: 480px;
-  border-width: 2px 0 8px;
-  border-top-color: #d0d0d0;
-  border-style: solid;
   margin: 4px auto;
   align-self: center;
   display: block;
