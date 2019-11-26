@@ -1,0 +1,5 @@
+!nHome
+@Welcome
+#Lovely Weather, Ain't It?
+$This is a footer, I can put the date here if I want, but I don't have to.
+Oh, hello there. I didn't see you come in. Please make yourself comfortable. I've prepared cookies and tea, surely you'd like to have some. As you can see, this webpage is called "newindex" that's because it'll eventually replace my previous index page that you probably saw when you first found this website.Unfortunately it won't be replacing it any time soon, there are a lot of things that I need to get working first before I can make that commit. But feel free to enjoy the current styling visible to you at this very moment. Keep in mind though that some of this could change before I complete the project.

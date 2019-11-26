@@ -1,0 +1,10 @@
+!nMusic
+@Mega Link Testing
+#Yep!
+$11/25/2019
+*0-my GitHub page-https://github.com/jauq-_blank
+*1-several-views/games.html-_self
+*2-links-views/music.html-_self
+*3-various-views/art.html-_self
+*4-pages-views/misc.html-_self
+You better believe I'm trying to get links inside of the blocks, all auto-generated from ruby scripts. Check it out on *0. Also here are *1 *2 to my *3 *4.

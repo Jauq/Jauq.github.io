@@ -1,5 +1,6 @@
-print "Relative path to html file for conversion: "
+print "Relative path to html file for conversion to js script format: "
 filePath = gets.chomp
+puts "Converting html..."
 
 if filePath.include?(".html")
     filePath = filePath[0..filePath.length-6]
@@ -20,5 +21,9 @@ newData.insert(0, "document.write('\\")
 newData.push("');")
 
 #puts newData
-
+File.new("#{filePath}.js", "w+")
 File.write("#{filePath}.js", newData.join("\n"), mode: "a")
+
+puts "Conversion Successful!"
+print "Press enter to continue."
+gets
