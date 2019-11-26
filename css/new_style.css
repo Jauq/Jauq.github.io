@@ -125,7 +125,8 @@ a {
   text-decoration: none;
 }
 .bodyBox img {
-  max-width: 480px;
+  max-height: 480px;
+  max-width: 100%;
   margin: 4px auto;
   align-self: center;
   display: block;
@@ -280,6 +281,7 @@ a {
     font-size: 12px;
   }
   .bodyBox img {
+    max-height: 100%;
     max-width: 100%;
   }
   .hideSmall {

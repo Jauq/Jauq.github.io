@@ -55,13 +55,14 @@ def genContent(f, filePath)
       if temp != nil
         link = content[temp]
         content.delete_at(temp)
-        link = link.split("-")
+        link = link.split("|")
         linkTheme = ""
         if theme != nil
           linkTheme = theme
         end
+        save = link[3] != nil ? link[3] : "_self"
         content.each do |line|
-          line.gsub!(link[0], "<a class=\"#{linkTheme}\" href=\"#{link[2]}\" target=\"#{link[3]}\">#{link[1]}</a>")
+          line.gsub!(link[0], "<a class=\"#{linkTheme}\" href=\"#{link[2]}\" target=\"#{save}\">#{link[1]}</a>")
         end
       else
         break
@@ -73,9 +74,13 @@ def genContent(f, filePath)
       if temp != nil
         pic = content[temp]
         content.delete_at(temp)
-        pic = pic.split("-")
+        pic = pic.split("|")
         content.each do |line|
-          line.gsub!(pic[0], "</p><img src=\"#{pic[1]}\" class=\"img-fluid\" alt=\"#{pic[2]}\"><p class=\"noMargin\">")
+          if pic.count == 3
+            line.gsub!(pic[0], "</p><img src=\"#{pic[1]}\" class=\"img-fluid\" alt=\"#{pic[2]}\"><p class=\"noMargin\">")
+          elsif pic.count == 4
+            line.gsub!(pic[0], "<a href=\"#{pic[3]}\"></p><img src=\"#{pic[1]}\" class=\"img-fluid\" alt=\"#{pic[2]}\"><p class=\"noMargin\"></a>")
+          end
         end
       else
         break

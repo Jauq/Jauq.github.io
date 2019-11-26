@@ -1,64 +1,225 @@
-puts "Create new content."
-print "Please type the subfolder's name for this content to be placed: "
-folder = gets.chomp.downcase
-puts "\nNext Select a theme, 0 - Home, 1 - Games, 2 - Music, 3 - Art, 4 - Misc"
-print "If none is chosen Home will be default: "
-theme = gets.chomp.to_i
-if theme > 4
-  theme = 0
+$themes = ["Home", "Games", "Music", "Art", "Misc"]
+class Content
+  attr_accessor :theme, :title, :subtitle, :footer, :links, :pics, :body
+  def initialize
+    @theme = "Home"
+    @title = nil
+    @subtitle = nil
+    @footer = nil
+    @links = []
+    @pics = []
+    @body = nil
+  end
+
+  def read
+    puts ""
+    puts "Theme:    \"#{@theme}\""
+    puts "Title:    \"#{@title}\""
+    puts "Subtitle: \"#{@subtitle}\""
+    puts "Footer:   \"#{@footer}\""
+    puts "Links:    #{@links}"
+    puts "Pics:     #{@pics}"
+    puts "Body:     \"#{@body}\""
+  end
+
+  def createContent(folder)
+
+    prevEntryCount = Dir.glob("../content/#{folder}/*.txt").count
+    fileName = "#{"0" * (16 - prevEntryCount.to_s.length)}#{prevEntryCount}.txt"
+
+    File.open("../content/#{folder}/#{fileName}", "w+") do |f|
+      f.puts("!n" + @theme)
+      if @title != nil
+        f.puts("@#{@title}")
+      end
+      if @subtitle != nil
+        f.puts("##{@subtitle}")
+      end
+      if @footer != nil
+        f.puts("$#{@footer}")
+      end
+      @links.each do |link|
+        f.puts(link)
+      end
+      @pics.each do |pic|
+        f.puts(pic)
+      end
+      if @body != nil
+        f.puts(@body)
+      end
+    end
+
+  end
+
 end
-themes = ["nHome", "nGames", "nMusic", "nArt", "nMisc"]
-puts "\nNext we have title. If left blank a title will not be generated."
-print "Type the title of this entry: "
-title = gets.chomp
-puts "\nNext we have subtitle. If left blank a subtitle will not be generated."
-print "Type the subtitle of this entry: "
-subtitle = gets.chomp
-puts "\nNext we have footer. If left blank a footer will not be generated."
-print "Type the footer of this entry: "
-footer = gets.chomp
-puts "\nNext we have content"
-print "Type the full content of this entry: "
-content = gets.chomp
-puts "\nNext we have links. You can make as many links as necessary, but leaving the *key entry blank will stop this section and continue."
-links = []
+
+content = Content.new
+
 loop do
-  print "Type the *key of the link: "
-  temp = gets.chomp
-  if temp == ""
+
+  content.read
+
+  print "\nType the name of what you want to edit, or type 'done' to finish and create this content: "
+  input = gets.chomp.downcase
+  puts ""
+
+  if input == "theme" or input == "th"
+    puts "Select a theme: 0-Home, 1-Games, 2-Art, 3-Music, 4-Misc. Any other input will default to 0-Home."
+    print "> "
+    input = gets.chomp.to_i
+    content.theme = $themes[input]
+  elsif input == "title" or input == "ti"
+    print "Type the title for this content: "
+    input = gets.chomp
+    if input == ""
+      content.title = nil
+    else
+      content.title = input
+    end
+  elsif input == "subtitle" or input == "su"
+    print "Type the subtitle for this content: "
+    input = gets.chomp
+    if input == ""
+      content.subtitle = nil
+    else
+      content.subtitle = input
+    end
+  elsif input == "footer" or input == "fo"
+    print "Type the footer for this content: "
+    input = gets.chomp
+    if input == ""
+      content.footer = nil
+    else
+      content.footer = input
+    end
+  elsif input == "body" or input == "bo"
+    print "Type the body for this content: "
+    input = gets.chomp
+    if input == ""
+      content.body = nil
+    else
+      content.body = input
+    end
+  elsif input == "links" or input == "li"
+    content.links.count.times do |z|
+      puts "[#{z}] #{content.links[z]}"
+    end
+    puts "\nAbove are the list of current links. Type 'new' or 'delete' to do accordingly."
+    print "> "
+    input = gets.chomp.downcase
+    if input == "new" or input == "n"
+      invalid = false
+
+      print "Link *key: "
+      temp = ""
+      input = gets.chomp
+      if input.start_with?("*")
+        input = input[1...input.length]
+      end
+      invalid = true if input.length < 1
+      invalid = true if input.include?("|")
+      temp += "*#{input}"
+
+      print "Link words: "
+      input = gets.chomp
+      invalid = true if input == ""
+      invalid = true if input.include?("|")
+      temp += "|#{input}"
+
+      print "Link path: "
+      input = gets.chomp
+      invalid = true if input == ""
+      invalid = true if input.include?("|")
+      temp += "|#{input}"
+
+      print "Tab type (_blank, _self): "
+      input = gets.chomp
+      if input != ""
+        invalid = true if input.include?("|")
+        temp += "|#{input}"
+      end
+
+      if invalid
+        puts "This link is blatantly invalid, most of these cannot be blank or have the '|' symbol in them."
+      else
+        content.links.push(temp)
+      end
+    elsif input == "delete" or input == "d"
+      puts "Type the id of the link you want to delete (type nothing to quit, otherwise all other entries default to 0)"
+      print "> "
+      input = gets.chomp
+      if input != "" and input.to_i < content.links.count
+        content.links.delete_at(input.to_i)
+      end
+    else
+      puts "That doesn't appear to be a valid action you can do with links."
+    end
+  elsif input == "pics" or input == "pi"
+    content.pics.count.times do |z|
+      puts "[#{z}] #{content.pics[z]}"
+    end
+    puts "\nAbove are the list of current pics. Type 'new' or 'delete' to do accordingly."
+    print "> "
+    input = gets.chomp.downcase
+    if input == "new" or input == "n"
+      invalid = false
+
+      print "Pic %key: "
+      temp = ""
+      input = gets.chomp
+      if input.start_with?("%")
+        input = input[1...input.length]
+      end
+      invalid = true if input.length < 1
+      invalid = true if input.include?("|")
+      temp += "%#{input}"
+
+      print "Pic path: "
+      input = gets.chomp
+      invalid = true if input == ""
+      invalid = true if input.include?("|")
+      temp += "|#{input}"
+
+      print "Pic alt: "
+      input = gets.chomp
+      invalid = true if input == ""
+      invalid = true if input.include?("|")
+      temp += "|#{input}"
+
+      print "Pic link (can be blank): "
+      input = gets.chomp
+      if input != ""
+        invalid = true if input.include?("|")
+        temp += "|#{input}"
+      end
+
+      if invalid
+        puts "This pic is blatantly invalid, most of these cannot be blank or have the '|' symbol in them."
+      else
+        content.pics.push(temp)
+      end
+    elsif input == "delete" or input == "d"
+      puts "Type the id of the pic you want to delete (type nothing to quit, otherwise all other entries default to 0)"
+      print "> "
+      input = gets.chomp
+      if input != "" and input.to_i < content.pics.count
+        content.pics.delete_at(input.to_i)
+      end
+    else
+      puts "That doesn't appear to be a valid action you can do with links."
+    end
+  elsif input == "done" or input == "do"
+    puts "Type the subfolder where this content will be generated (currently only 'home' is an active directory)."
+    print ">"
+    input = gets.chomp.downcase
+    content.createContent(input)
     break
+  else
+    puts "I don't know what you are asking for."
   end
-  print "Type the text of the link: "
-  temp += "-#{gets.chomp}"
-  print "Type the actualy link: "
-  temp += "-#{gets.chomp}"
-  print "Type the target type (_blank, _self, etc): "
-  temp += "-#{gets.chomp}"
-  links.push(temp)
-end
-puts "\nNow the content entry will be generated."
 
-prevEntryCount = Dir.glob("../content/#{folder}/*.txt").count
-fileName = "#{"0" * (16 - prevEntryCount.to_s.length)}#{prevEntryCount}.txt"
-File.open("../content/#{folder}/#{fileName}", "w+") do |f|
-  f.puts("!" + themes[theme])
-  if title != ""
-    f.puts("@#{title}")
-  end
-  if subtitle != ""
-    f.puts("##{subtitle}")
-  end
-  if footer != ""
-    f.puts("$#{footer}")
-  end
-  links.each do |link|
-    f.puts(link)
-  end
-  if content != ""
-    f.puts(content)
-  end
 end
 
-puts "Content Generated!"
-print "Press enter to continue."
+puts "Content was successfully created!"
+print "Press enter to close."
 gets

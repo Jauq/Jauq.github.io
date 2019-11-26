@@ -9,7 +9,7 @@ def updateIndex(name = "index.html")
   $f.push("<html lang=\"en\">"); hn
   $f.push("   <script src=\"presets/head.js\"></script>"); hn
   $f.push("   <body>"); hn
-  $f.push("     <script src=\"presets/jumbo.js\"></script>"); hn
+  $f.push("     <script src=\"presets/indexJumbo.js\"></script>"); hn
   $f.push("     <script src=\"presets/navbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll\">"); hn
   cm("Main Section")
