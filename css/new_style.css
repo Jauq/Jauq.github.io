@@ -112,14 +112,14 @@ a {
   text-align: justify;
 }
 
-.bodyBox p a {
+.bodyBox a {
   display: inline;
   font-weight: 500;
   transition:
     color 0.2s ease;
 }
-.bodyBox p a:hover,
-.bodyBox p a:active {
+.bodyBox a:hover,
+.bodyBox a:active {
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
