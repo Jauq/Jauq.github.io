@@ -11,7 +11,7 @@ def updateIndex(name = "index.html")
   $f.push("   <body>"); hn
   $f.push("     <script src=\"presets/indexJumbo.js\"></script>"); hn
   $f.push("     <script src=\"presets/navbar.js\"></script>"); hn
-  $f.push("     <div class=\"afterScroll\">"); hn
+  $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
   $f.push("       <div class=\"container\">"); hn
   v.each do |contents|

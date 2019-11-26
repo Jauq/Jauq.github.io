@@ -267,7 +267,7 @@ a {
   }
 }
 
-@media (min-width: 537px) {
+@media (min-width: 576px) {
   .hideSmall {
     display: block;
   }
@@ -276,9 +276,22 @@ a {
   }
 }
 
-@media (max-width: 536px) {
+@media (max-width: 575px) {
   .navObject {
     font-size: 12px;
+  }
+  .fluidBlocks .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .fluidBlocks .row {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .fluidBlocks .col {
+    padding-left: 0;
+    padding-right: 0;
   }
   .bodyBox img {
     max-height: 100%;
