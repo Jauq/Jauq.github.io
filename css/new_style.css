@@ -124,7 +124,7 @@ a {
   text-decoration: none;
 }
 .bodyBox img {
-  max-height: 480px;
+  max-height: 256px;
   max-width: 100%;
   margin: 4px auto;
   align-self: center;
