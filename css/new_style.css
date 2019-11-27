@@ -184,12 +184,28 @@ a {
   background-image: url("../img/portfolioDiamonds2.jpg")
 }
 .gamesBgImage {
+  background-image: url("../img/gamesBanner.jpg");
+}
+.gamesBgDeco {
+  background-image: url("../img/portfolioDiamonds2.jpg")
 }
 .musicBgImage {
+  background-image: url("../img/musicBanner.jpg");
+}
+.musicBgDeco {
+  background-image: url("../img/portfolioDiamonds2.jpg")
 }
 .artBgImage {
+  background-image: url("../img/artBanner.jpg");
+}
+.artBgDeco {
+  background-image: url("../img/portfolioDiamonds2.jpg")
 }
 .miscBgImage {
+  background-image: url("../img/miscBanner.jpg");
+}
+.miscBgDeco {
+  background-image: url("../img/portfolioDiamonds2.jpg")
 }
 .bgImage .repeatBgImage {
   background-repeat: repeat-x;

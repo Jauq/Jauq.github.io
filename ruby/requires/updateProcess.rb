@@ -27,7 +27,7 @@ def updateIndex(filePath = "index.html")
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
   $f.push("   <script src=\"presets/head.js\"></script>"); hn
-  $f.push("   <body>"); hn
+  $f.push("   <body class=\"homeBgDeco\">"); hn
   $f.push("     <script src=\"presets/indexJumbo.js\"></script>"); hn
   $f.push("     <script src=\"presets/navbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
@@ -57,7 +57,7 @@ def updateGames(filePath = "views/games.html")
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
   $f.push("   <script src=\"../presets/viewsHead.js\"></script>"); hn
-  $f.push("   <body class=\"nGames\">"); hn
+  $f.push("   <body class=\"gamesBgDeco\">"); hn
   $f.push("     <script src=\"../presets/gamesJumbo.js\"></script>"); hn
   $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
@@ -83,7 +83,7 @@ def updateMusic(filePath = "views/music.html")
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
   $f.push("   <script src=\"../presets/viewsHead.js\"></script>"); hn
-  $f.push("   <body>"); hn
+  $f.push("   <body class=\"musicBgDeco\">"); hn
   $f.push("     <script src=\"../presets/musicJumbo.js\"></script>"); hn
   $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
@@ -109,7 +109,7 @@ def updateArt(filePath = "views/art.html")
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
   $f.push("   <script src=\"../presets/viewsHead.js\"></script>"); hn
-  $f.push("   <body>"); hn
+  $f.push("   <body class=\"artBgDeco\">"); hn
   $f.push("     <script src=\"../presets/artJumbo.js\"></script>"); hn
   $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
@@ -135,7 +135,7 @@ def updateMisc(filePath = "views/misc.html")
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
   $f.push("   <script src=\"../presets/viewsHead.js\"></script>"); hn
-  $f.push("   <body>"); hn
+  $f.push("   <body class=\"miscBgDeco\">"); hn
   $f.push("     <script src=\"../presets/miscJumbo.js\"></script>"); hn
   $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
