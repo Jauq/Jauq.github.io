@@ -1,7 +1,7 @@
-def updateIndex(name = "index.html")
+def updateIndex(filePath = "index.html")
 
-  v = getFiles("../content/home")
-  v = v.reverse
+  files = getFiles("../content/home")
+  files = files.reverse
 
   $f = []
 
@@ -14,7 +14,7 @@ def updateIndex(name = "index.html")
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
   $f.push("       <div class=\"container\">"); hn
-  v.each do |contents|
+  files.each do |contents|
     genContent($f, contents); hn
   end
   $f.push("       </div>")
@@ -26,7 +26,7 @@ def updateIndex(name = "index.html")
   $f.push("   </body>")
   $f.push("</html>")
 
-  File.new("../#{name}", "w+")
-  File.write("../#{name}", $f.join("\n"), mode: "a")
+  File.new("../#{filePath}", "w+")
+  File.write("../#{filePath}", $f.join("\n"), mode: "a")
 
 end
