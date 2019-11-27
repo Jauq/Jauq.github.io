@@ -32,6 +32,7 @@ a {
   border-width: 2px 2px 8px;
   padding: 8px 16px;
   margin: 0 0 24px;
+  box-shadow: 0 8px 8px #000000;
 }
 
 .navBar{
@@ -42,6 +43,7 @@ a {
   height: 48px;
   margin: 0 0 24px;
   z-index: 1;
+  box-shadow: 0 10px 8px #000000;
 }
 
 .navBar a {
@@ -170,13 +172,16 @@ a {
 
 .bgImage {
   width: auto;
-  height: 196px;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 480px;
+  background-size: contain;
 }
 .homeBgImage {
-  background-image: url("../img/geofly.png");
+  background-image: url("../img/homeBanner.jpg");
+}
+.homeBgDeco {
+  background-image: url("../img/portfolioDiamonds2.jpg")
 }
 .gamesBgImage {
 }
@@ -293,6 +298,9 @@ a {
   .bodyBox .noMargin {
     margin-left: 8px;
     margin-right: 8px;
+  }
+  .bgImage {
+    background-size: cover;
   }
   .hideSmall {
     display: none;
