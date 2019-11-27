@@ -79,7 +79,7 @@ def genContent(f, filePath)
           if pic.count == 3
             line.gsub!(pic[0], "</p><img src=\"#{pic[1]}\" class=\"img-fluid\" alt=\"#{pic[2]}\"><p class=\"noMargin\">")
           elsif pic.count == 4
-            line.gsub!(pic[0], "<a href=\"#{pic[3]}\"></p><img src=\"#{pic[1]}\" class=\"img-fluid\" alt=\"#{pic[2]}\"><p class=\"noMargin\"></a>")
+            line.gsub!(pic[0], "<a href=\"#{pic[3]}\"></p><img src=\"#{pic[1]}\" alt=\"#{pic[2]}\"><p class=\"noMargin\"></a>")
           end
         end
       else

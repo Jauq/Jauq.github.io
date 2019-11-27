@@ -209,7 +209,7 @@ loop do
       puts "That doesn't appear to be a valid action you can do with links."
     end
   elsif input == "done" or input == "do"
-    puts "Type the subfolder where this content will be generated (currently only 'home' is an active directory)."
+    puts "Type the subfolder where this content will be generated."
     print ">"
     input = gets.chomp.downcase
     content.createContent(input)

@@ -28,9 +28,8 @@ a {
   background-color: #1c1c1c;
   color: #d0d0d0;
   border-radius: 0px;
-  border-color: #909090 #1c1c1c #909090;
   border-style: solid;
-  border-width: 2px 0 8px;
+  border-width: 2px 2px 8px;
   padding: 8px 16px;
   margin: 0 0 24px;
 }
@@ -164,28 +163,31 @@ a {
 
 .jumbotron {
   margin: 0;
-  padding: 8px 0 0;
+  padding: 0;
   height: 196px;
   background-color: #1c1c1c;
 }
 
 .bgImage {
-  width: 100%;
+  width: auto;
   height: 196px;
-  background-image: url("../img/geofly.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 480px;
-  animation: fade 3s;
-  animation-delay: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  filter: blur(0px);
 }
-
-@keyframes fade {
-  from { filter: blur(0px); }
-  to { filter: blur(16px); }
+.homeBgImage {
+  background-image: url("../img/geofly.png");
+}
+.gamesBgImage {
+}
+.musicBgImage {
+}
+.artBgImage {
+}
+.miscBgImage {
+}
+.bgImage .repeatBgImage {
+  background-repeat: repeat-x;
 }
 
 .jumbotron h1 {
@@ -195,22 +197,7 @@ a {
   opacity: 0;
   position: relative;
   top: -112px;
-  left: -84px;
   padding: 0 16px;
-  animation: slide 2.5s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes slide {
-  from {
-    opacity: 0;
-    left: -84px;
-  }
-  to {
-    opacity: 1;
-    left: 0px;
-  }
 }
 
 .container {
@@ -293,9 +280,19 @@ a {
     padding-left: 0;
     padding-right: 0;
   }
+  .bodyBox {
+    padding: 8px 0;
+    border-width: 2px 0 8px;
+  }
   .bodyBox img {
     max-height: 100%;
     max-width: 100%;
+  }
+  .bodyBox h1,
+  .bodyBox h2,
+  .bodyBox .noMargin {
+    margin-left: 8px;
+    margin-right: 8px;
   }
   .hideSmall {
     display: none;
