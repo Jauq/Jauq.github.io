@@ -64,7 +64,7 @@ loop do
   puts ""
 
   if input == "theme" or input == "th"
-    puts "Select a theme: 0-Home, 1-Games, 2-Art, 3-Music, 4-Misc. Any other input will default to 0-Home."
+    puts "Select a theme: 0-Home, 1-Games, 2-Music, 3-Art, 4-Misc. Any other input will default to 0-Home."
     print "> "
     input = gets.chomp.to_i
     content.theme = $themes[input]

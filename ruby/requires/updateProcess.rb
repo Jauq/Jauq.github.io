@@ -52,6 +52,9 @@ end
 
 def updateGames(filePath = "views/games.html")
 
+  files = getFiles("../content/games")
+  files = files.reverse
+
   $f = []
 
   $f.push("<!doctype html>")
@@ -62,7 +65,11 @@ def updateGames(filePath = "views/games.html")
   $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
-
+  $f.push("       <div class=\"container\">"); hn
+  files.each do |contents|
+    genContent($f, contents); hn
+  end
+  $f.push("       </div>")
   cm("Main Section", true); hn
   $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
@@ -78,6 +85,9 @@ end
 
 def updateMusic(filePath = "views/music.html")
 
+  files = getFiles("../content/music")
+  files = files.reverse
+
   $f = []
 
   $f.push("<!doctype html>")
@@ -88,7 +98,11 @@ def updateMusic(filePath = "views/music.html")
   $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
-
+  $f.push("       <div class=\"container\">"); hn
+  files.each do |contents|
+    genContent($f, contents); hn
+  end
+  $f.push("       </div>")
   cm("Main Section", true); hn
   $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
@@ -104,6 +118,9 @@ end
 
 def updateArt(filePath = "views/art.html")
 
+  files = getFiles("../content/art")
+  files = files.reverse
+
   $f = []
 
   $f.push("<!doctype html>")
@@ -114,7 +131,11 @@ def updateArt(filePath = "views/art.html")
   $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
-
+  $f.push("       <div class=\"container\">"); hn
+  files.each do |contents|
+    genContent($f, contents); hn
+  end
+  $f.push("       </div>")
   cm("Main Section", true); hn
   $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
@@ -130,6 +151,9 @@ end
 
 def updateMisc(filePath = "views/misc.html")
 
+  files = getFiles("../content/misc")
+  files = files.reverse
+
   $f = []
 
   $f.push("<!doctype html>")
@@ -140,7 +164,11 @@ def updateMisc(filePath = "views/misc.html")
   $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
-
+  $f.push("       <div class=\"container\">"); hn
+  files.each do |contents|
+    genContent($f, contents); hn
+  end
+  $f.push("       </div>")
   cm("Main Section", true); hn
   $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn

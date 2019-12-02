@@ -1,0 +1,6 @@
+!nGames
+@Games is Currently Unfinished
+#:(
+*0|Newgrounds|https://jauqar.newgrounds.com/|_blank
+*1|my GitHub|https://github.com/Jauq|_blank
+I'm an avid programmer, you'll see my games here. Hopefully this box of information won't be here for long either. This is the first bit of content I plan to create once I get down to populating my site. For now you can check out my games on *0 or on *1.
