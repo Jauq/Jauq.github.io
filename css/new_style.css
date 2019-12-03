@@ -315,6 +315,19 @@ a {
     display: none;
   }
 }
+@media (min-width: 768px) {
+  .hideMed {
+    display: block;
+  }
+  .showMed {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .hideMed {
+    display: none;
+  }
+}
 @media (min-width: 576px) {
   .hideSmall {
     display: block;
@@ -360,6 +373,9 @@ a {
   }
   .mediaContent {
     padding: 0;
+  }
+  .mediaContent .genreTags {
+    right: 8px;
   }
   .bgImage {
     background-size: cover;
