@@ -1,11 +1,13 @@
 def hn
     $f.push("")
 end
+
 def cm(comment, close = false)
     a = close ? "/" : ""
     temp = "<!-- #{a}#{comment} -->"
     $f.push(temp)
 end
+
 def genContent(f, filePath)
   content = getFileLines(filePath)
   ignore = false

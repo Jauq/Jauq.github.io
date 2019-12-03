@@ -23,7 +23,8 @@ a {
   display: block;
 }
 
-.bodyBox {
+.bodyBox,
+.mediaBox {
   height: auto;
   background-color: #1c1c1c;
   color: #d0d0d0;
@@ -103,24 +104,41 @@ a {
   text-align: center;
   font-variant: small-caps;
 }
+.mediaBox h1 {
+  margin: 0 0 4px;
+  text-align: left;
+  font-variant: small-caps;
+  font-size: 24px;
+}
 .bodyBox h2 {
   margin: -4px 0 4px;
   font-size: 16px;
   text-align: center;
 }
-.bodyBox p:not(.cancel) {
+.bodyBox p:not(.cancel),
+.mediaBox p:not(.cancel) {
   color: #d0d0d0;
   text-align: justify;
 }
-
-.bodyBox a {
+.mediaContent {
+  padding-right: 0;
+}
+.bodyBox a,
+.mediaBox a {
   display: inline;
   font-weight: 500;
   transition:
     color 0.2s ease;
 }
+.mediaBox a {
+  padding: 0;
+  margin: 0 auto;
+  display: inline;
+}
 .bodyBox a:hover,
-.bodyBox a:active {
+.bodyBox a:active,
+.mediaBox a:hover,
+.mediaBox a:active {
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
@@ -129,6 +147,22 @@ a {
   max-height: 256px;
   margin: 4px auto;
   display: block;
+}
+.mediaBox img {
+  border-width: 2px;
+  border-color: #303030;
+  border-style: solid;
+  transition:
+    border-color 0.2s ease;
+}
+.mediaBox img:hover,
+.mediaBox img:active {
+  border-color: #ffffff;
+}
+.mediaContent .genreTags {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .navObject:hover,
@@ -246,9 +280,6 @@ a {
   margin: 0;
   height: auto;
 }
-.noMargin .cancel {
-  color: #f00000;
-}
 /*
 @keyframes colorswap {
   0% {border-top-color: #e0a040; color: #e0a040;}
@@ -271,7 +302,19 @@ a {
     width: 20%;
   }
 }
-
+@media (min-width: 992px) {
+  .hideLarge {
+    display: block;
+  }
+  .showLarge {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .hideLarge {
+    display: none;
+  }
+}
 @media (min-width: 576px) {
   .hideSmall {
     display: block;
@@ -298,7 +341,8 @@ a {
     padding-left: 0;
     padding-right: 0;
   }
-  .bodyBox {
+  .bodyBox,
+  .mediaBox {
     padding: 8px 0;
     border-width: 2px 0 8px;
   }
@@ -308,9 +352,14 @@ a {
   }
   .bodyBox h1,
   .bodyBox h2,
-  .bodyBox .noMargin {
+  .bodyBox .noMargin,
+  .mediaBox h1,
+  .mediaBox .noMargin {
     margin-left: 8px;
     margin-right: 8px;
+  }
+  .mediaContent {
+    padding: 0;
   }
   .bgImage {
     background-size: cover;
