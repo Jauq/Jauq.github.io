@@ -188,7 +188,7 @@ def update404(filePath = "404.html")
 
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
-  $f.push("   <script src=\"/presets/head.js\"></script>"); hn
+  $f.push("   <script src=\"/presets/viewsHead.js\"></script>"); hn
   $f.push("   <body class=\"homeBgDeco\">"); hn
   $f.push("     <script src=\"/presets/indexJumbo.js\"></script>"); hn
   $f.push("     <script src=\"/presets/navbar.js\"></script>"); hn
