@@ -188,32 +188,27 @@ def update404(filePath = "404.html")
 
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
-  temp = getFileLines("../presets/head.html")
-  temp.each do |line|
-    $f.push(line)
-  end
+  $f.push("   <script src=\"../presets/head.js\"></script>")
+  $f.push("   <script src=\"presets/head.js\"></script>"); hn
   $f.push("   <body class=\"homeBgDeco\">"); hn
-  temp = getFileLines("../presets/indexJumbo.html")
-  temp.each do |line|
-    $f.push(line)
-  end
-  temp = getFileLines("../presets/navbar.html")
-  temp.each do |line|
-    $f.push(line)
-  end
+  $f.push("     <script src=\"presets/indexJumbo.js\"></script>"); hn
+  $f.push("     <script src=\"../presets/indexJumbo.js\"></script>"); hn
+  $f.push("     <script src=\"presets/navbar.js\"></script>"); hn
+  $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
+
   cm("Main Section")
   $f.push("       <div class=\"container\">"); hn
   genContent($f, "../content/404block.txt"); hn
   $f.push("       </div>")
   cm("Main Section", true); hn
-  temp = getFileLines("../presets/footer.html")
-  temp.each do |line|
-    $f.push(line)
-  end
+  $f.push("       <script src=\"presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
   $f.push("     <script src=\"scripts/navbarSticky.js\"></script>"); hn
+  $f.push("     <script src=\"../scripts/navbarSticky.js\"></script>"); hn
   $f.push("     <script src=\"scripts/footerYear.js\"></script>"); hn
+  $f.push("     <script src=\"../scripts/footerYear.js\"></script>"); hn
   $f.push("   </body>")
   $f.push("</html>")
 
