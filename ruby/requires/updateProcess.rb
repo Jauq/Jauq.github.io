@@ -17,19 +17,19 @@ def htmlPresetMaker(filePath)
 
 end
 
-def updateIndex(filePath = "index.html")
+def updateIndex(filePath = "/Jauq.github.io/index.html")
 
-  files = getFiles("../content/home")
+  files = getFiles("/Jauq.github.io/content/home")
   files = files.reverse
 
   $f = []
 
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
-  $f.push("   <script src=\"presets/head.js\"></script>"); hn
+  $f.push("   <script src=\"/Jauq.github.io/presets/head.js\"></script>"); hn
   $f.push("   <body class=\"homeBgDeco\">"); hn
-  $f.push("     <script src=\"presets/indexJumbo.js\"></script>"); hn
-  $f.push("     <script src=\"presets/navbar.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/indexJumbo.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/navbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
   $f.push("       <div class=\"container\">"); hn
@@ -38,31 +38,31 @@ def updateIndex(filePath = "index.html")
   end
   $f.push("       </div>")
   cm("Main Section", true); hn
-  $f.push("       <script src=\"presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"/Jauq.github.io/presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
-  $f.push("     <script src=\"scripts/navbarSticky.js\"></script>"); hn
-  $f.push("     <script src=\"scripts/footerYear.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/navbarSticky.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/footerYear.js\"></script>"); hn
   $f.push("   </body>")
   $f.push("</html>")
 
-  File.new("../#{filePath}", "w+")
-  File.write("../#{filePath}", $f.join("\n"), mode: "a")
+  File.new("#{filePath}", "w+")
+  File.write("#{filePath}", $f.join("\n"), mode: "a")
 
 end
 
-def updateGames(filePath = "views/games.html")
+def updateGames(filePath = "/Jauq.github.io/views/games.html")
 
-  files = getFiles("../content/games")
+  files = getFiles("/Jauq.github.io/content/games")
   files = files.reverse
 
   $f = []
 
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
-  $f.push("   <script src=\"../presets/viewsHead.js\"></script>"); hn
+  $f.push("   <script src=\"/Jauq.github.io/presets/head.js\"></script>"); hn
   $f.push("   <body class=\"gamesBgDeco\">"); hn
-  $f.push("     <script src=\"../presets/gamesJumbo.js\"></script>"); hn
-  $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/gamesJumbo.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/navbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
   $f.push("       <div class=\"container\">"); hn
@@ -71,31 +71,31 @@ def updateGames(filePath = "views/games.html")
   end
   $f.push("       </div>")
   cm("Main Section", true); hn
-  $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"/Jauq.github.io/presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
-  $f.push("     <script src=\"../scripts/navbarSticky.js\"></script>"); hn
-  $f.push("     <script src=\"../scripts/footerYear.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/navbarSticky.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/footerYear.js\"></script>"); hn
   $f.push("   </body>")
   $f.push("</html>")
 
-  File.new("../#{filePath}", "w+")
-  File.write("../#{filePath}", $f.join("\n"), mode: "a")
+  File.new("#{filePath}", "w+")
+  File.write("#{filePath}", $f.join("\n"), mode: "a")
 
 end
 
-def updateMusic(filePath = "views/music.html")
+def updateMusic(filePath = "/Jauq.github.io/views/music.html")
 
-  files = getFiles("../content/music")
+  files = getFiles("/Jauq.github.io/content/music")
   files = files.reverse
 
   $f = []
 
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
-  $f.push("   <script src=\"../presets/viewsHead.js\"></script>"); hn
+  $f.push("   <script src=\"/Jauq.github.io/presets/head.js\"></script>"); hn
   $f.push("   <body class=\"musicBgDeco\">"); hn
-  $f.push("     <script src=\"../presets/musicJumbo.js\"></script>"); hn
-  $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/musicJumbo.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/navbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
   $f.push("       <div class=\"container\">"); hn
@@ -104,31 +104,31 @@ def updateMusic(filePath = "views/music.html")
   end
   $f.push("       </div>")
   cm("Main Section", true); hn
-  $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"/Jauq.github.io/presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
-  $f.push("     <script src=\"../scripts/navbarSticky.js\"></script>"); hn
-  $f.push("     <script src=\"../scripts/footerYear.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/navbarSticky.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/footerYear.js\"></script>"); hn
   $f.push("   </body>")
   $f.push("</html>")
 
-  File.new("../#{filePath}", "w+")
-  File.write("../#{filePath}", $f.join("\n"), mode: "a")
+  File.new("#{filePath}", "w+")
+  File.write("#{filePath}", $f.join("\n"), mode: "a")
 
 end
 
-def updateArt(filePath = "views/art.html")
+def updateArt(filePath = "/Jauq.github.io/views/art.html")
 
-  files = getFiles("../content/art")
+  files = getFiles("/Jauq.github.io/content/art")
   files = files.reverse
 
   $f = []
 
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
-  $f.push("   <script src=\"../presets/viewsHead.js\"></script>"); hn
+  $f.push("   <script src=\"/Jauq.github.io/presets/head.js\"></script>"); hn
   $f.push("   <body class=\"artBgDeco\">"); hn
-  $f.push("     <script src=\"../presets/artJumbo.js\"></script>"); hn
-  $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/artJumbo.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/navbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
   $f.push("       <div class=\"container\">"); hn
@@ -137,31 +137,31 @@ def updateArt(filePath = "views/art.html")
   end
   $f.push("       </div>")
   cm("Main Section", true); hn
-  $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"/Jauq.github.io/presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
-  $f.push("     <script src=\"../scripts/navbarSticky.js\"></script>"); hn
-  $f.push("     <script src=\"../scripts/footerYear.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/navbarSticky.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/footerYear.js\"></script>"); hn
   $f.push("   </body>")
   $f.push("</html>")
 
-  File.new("../#{filePath}", "w+")
-  File.write("../#{filePath}", $f.join("\n"), mode: "a")
+  File.new("#{filePath}", "w+")
+  File.write("#{filePath}", $f.join("\n"), mode: "a")
 
 end
 
-def updateMisc(filePath = "views/misc.html")
+def updateMisc(filePath = "/Jauq.github.io/views/misc.html")
 
-  files = getFiles("../content/misc")
+  files = getFiles("/Jauq.github.io/content/misc")
   files = files.reverse
 
   $f = []
 
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
-  $f.push("   <script src=\"../presets/viewsHead.js\"></script>"); hn
+  $f.push("   <script src=\"/Jauq.github.io/presets/head.js\"></script>"); hn
   $f.push("   <body class=\"miscBgDeco\">"); hn
-  $f.push("     <script src=\"../presets/miscJumbo.js\"></script>"); hn
-  $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/miscJumbo.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/navbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
   cm("Main Section")
   $f.push("       <div class=\"container\">"); hn
@@ -170,43 +170,43 @@ def updateMisc(filePath = "views/misc.html")
   end
   $f.push("       </div>")
   cm("Main Section", true); hn
-  $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"/Jauq.github.io/presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
-  $f.push("     <script src=\"../scripts/navbarSticky.js\"></script>"); hn
-  $f.push("     <script src=\"../scripts/footerYear.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/navbarSticky.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/footerYear.js\"></script>"); hn
   $f.push("   </body>")
   $f.push("</html>")
 
-  File.new("../#{filePath}", "w+")
-  File.write("../#{filePath}", $f.join("\n"), mode: "a")
+  File.new("#{filePath}", "w+")
+  File.write("#{filePath}", $f.join("\n"), mode: "a")
 
 end
 
-def update404(filePath = "404.html")
+def update404(filePath = "/Jauq.github.io/404.html")
 
   $f = []
 
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
-  $f.push("   <script src=\"/presets/404Head.js\"></script>"); hn
+  $f.push("   <script src=\"/Jauq.github.io/presets/head.js\"></script>"); hn
   $f.push("   <body class=\"homeBgDeco\">"); hn
-  $f.push("     <script src=\"/presets/indexJumbo.js\"></script>"); hn
-  $f.push("     <script src=\"/presets/404navbar.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/indexJumbo.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/navbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
 
   cm("Main Section")
   $f.push("       <div class=\"container\">"); hn
-  genContent($f, "../content/404block.txt"); hn
+  genContent($f, "/Jauq.github.io/content/404block.txt"); hn
   $f.push("       </div>")
   cm("Main Section", true); hn
-  $f.push("       <script src=\"/presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"/Jauq.github.io/presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
-  $f.push("     <script src=\"/scripts/navbarSticky.js\"></script>"); hn
-  $f.push("     <script src=\"/scripts/footerYear.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/navbarSticky.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/footerYear.js\"></script>"); hn
   $f.push("   </body>")
   $f.push("</html>")
 
-  File.new("../#{filePath}", "w+")
-  File.write("../#{filePath}", $f.join("\n"), mode: "a")
+  File.new("#{filePath}", "w+")
+  File.write("#{filePath}", $f.join("\n"), mode: "a")
 
 end

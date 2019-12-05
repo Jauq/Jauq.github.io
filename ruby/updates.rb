@@ -16,7 +16,7 @@ input = gets.chomp.to_i
 update = true
 if input == 1
   puts "Updating newindex.html..."
-  updateIndex("newindex.html")
+  updateIndex("../newindex.html")
 elsif input == 2
   puts "Updating games.html..."
   updateGames
@@ -40,7 +40,7 @@ elsif input == 7
   update404
 elsif input == 8
   puts "Updating newindex.html..."
-  updateIndex("newindex.html")
+  updateIndex("../newindex.html")
   puts "Updating games.html..."
   updateGames
   puts "Updating music.html..."

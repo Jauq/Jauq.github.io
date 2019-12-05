@@ -166,7 +166,7 @@ def genMediaContent(f, filePath)
       content.delete_at(temp)
     end
 
-    page = theme[1...theme.length].downcase + title + ".html"
+    page = "/Jauq.github.io/views/" + theme[1...theme.length].downcase + title + ".html"
 
     f.push("<div class=\"row\">")
     f.push("  <div class=\"col\">")
@@ -179,7 +179,7 @@ def genMediaContent(f, filePath)
       f.push("        <br class=\"showMed\"/>")
       f.push("        <div class=\"genreTags\">")
       genres.each do |genre|
-        f.push("          <a class=\"#{theme}\" href=\"#{theme[1...theme.length].downcase}Genre#{genre}.html\">#{genre}</a>")
+        f.push("          <a class=\"#{theme}\" href=\"/Jauq.github.io/views/#{theme[1...theme.length].downcase}Genre#{genre}.html\">#{genre}</a>")
       end
       f.push("        </div>")
     end
