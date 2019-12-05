@@ -8,6 +8,10 @@ html {
 *:after {
   box-sizing: inherit;
 }
+*::selection {
+  background: #1c1c1c;
+  color: #909090;
+}
 
 body{
   position: relative;
