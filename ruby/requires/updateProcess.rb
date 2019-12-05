@@ -188,13 +188,10 @@ def update404(filePath = "404.html")
 
   $f.push("<!doctype html>")
   $f.push("<html lang=\"en\">"); hn
-  $f.push("   <script src=\"../presets/viewsHead.js\"></script>")
-  $f.push("   <script src=\"presets/head.js\"></script>"); hn
+  $f.push("   <script src=\"/presets/head.js\"></script>"); hn
   $f.push("   <body class=\"homeBgDeco\">"); hn
-  $f.push("     <script src=\"presets/indexJumbo.js\"></script>"); hn
-  $f.push("     <script src=\"../presets/indexJumbo.js\"></script>"); hn
-  $f.push("     <script src=\"presets/navbar.js\"></script>"); hn
-  $f.push("     <script src=\"../presets/viewsNavbar.js\"></script>"); hn
+  $f.push("     <script src=\"/presets/indexJumbo.js\"></script>"); hn
+  $f.push("     <script src=\"/presets/navbar.js\"></script>"); hn
   $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
 
   cm("Main Section")
@@ -202,13 +199,10 @@ def update404(filePath = "404.html")
   genContent($f, "../content/404block.txt"); hn
   $f.push("       </div>")
   cm("Main Section", true); hn
-  $f.push("       <script src=\"presets/footer.js\"></script>"); hn
-  $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"/presets/footer.js\"></script>"); hn
   $f.push("     </div>"); hn
-  $f.push("     <script src=\"scripts/navbarSticky.js\"></script>"); hn
-  $f.push("     <script src=\"../scripts/navbarSticky.js\"></script>"); hn
-  $f.push("     <script src=\"scripts/footerYear.js\"></script>"); hn
-  $f.push("     <script src=\"../scripts/footerYear.js\"></script>"); hn
+  $f.push("     <script src=\"/scripts/navbarSticky.js\"></script>"); hn
+  $f.push("     <script src=\"/scripts/footerYear.js\"></script>"); hn
   $f.push("   </body>")
   $f.push("</html>")
 
