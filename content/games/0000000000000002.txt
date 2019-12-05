@@ -1,4 +1,4 @@
 !nGames
-@Pentanium
+@Rotary
 #Test for a game of mine with that name.
 $Puzzle

@@ -115,3 +115,77 @@ def genContent(f, filePath)
     f.push("</div>")
   end
 end
+
+def genMediaContent(f, filePath)
+  content = getFileLines(filePath)
+  ignore = false
+
+  temp = content.index { |x| x.start_with?("~~~") }
+  if temp != nil
+    ignore = true
+  end
+
+  if !ignore
+    temp = content.index { |x| x.start_with?("!") }
+    theme = "nHome"
+    if temp != nil
+      theme = content[temp]
+      theme = theme[1...theme.length]
+      content.delete_at(temp)
+    end
+
+    temp = content.index { |x| x.start_with?("@") }
+    title = "Default Title"
+    if temp != nil
+      title = content[temp]
+      title = title[1...title.length]
+      content.delete_at(temp)
+    end
+
+    temp = content.index { |x| x.start_with?("#") }
+    fill = "Default Body Text."
+    if temp != nil
+      fill = content[temp]
+      fill = fill[1...fill.length]
+      content.delete_at(temp)
+    end
+
+    temp = content.index { |x| x.start_with?("$") }
+    genres = []
+    if temp != nil
+      genres = content[temp]
+      genres = genres[1...genres.length].split('|')
+      content.delete_at(temp)
+    end
+
+    temp = content.index { |x| x.start_with?("%") }
+    pic = "../img/256x128pi.jpg"
+    if temp != nil
+      pic = content[temp]
+      pic = pic[1...pic.length]
+      content.delete_at(temp)
+    end
+
+    page = theme[1...theme.length].downcase + title + ".html"
+
+    f.push("<div class=\"row\">")
+    f.push("  <div class=\"col\">")
+    f.push("    <div class=\"mediaBox #{theme} row\">")
+    f.push("      <a href=\"#{page}\" class=\"col col-auto\"><img src=\"#{pic}\" alt=\"#{title} Thumbnail\"></img></a>")
+    f.push("      <div class=\"mediaContent col-sm-12 col-md\">")
+    f.push("        <h1><a class=\"#{theme}\" href=\"#{page}\">#{title}</a></h1>")
+    f.push("        <p class=\"noMargin\">#{fill}</p>")
+    if genres != []
+      f.push("        <br class=\"showMed\"/>")
+      f.push("        <div class=\"genreTags\">")
+      genres.each do |genre|
+        f.push("          <a class=\"#{theme}\" href=\"#{theme[1...theme.length].downcase}Genre#{genre}.html\">#{genre}</a>")
+      end
+      f.push("        </div>")
+    end
+    f.push("      </div>")
+    f.push("    </div>")
+    f.push("  </div>")
+    f.push("</div>")
+  end
+end

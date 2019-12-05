@@ -8,7 +8,8 @@ puts "[3] music"
 puts "[4] art"
 puts "[5] misc"
 puts "[6] presets"
-puts "[7] all"
+puts "[7] 404 page"
+puts "[8] all"
 
 print "\nType the id of what you want to update:  "
 input = gets.chomp.to_i
@@ -35,6 +36,9 @@ elsif input == 6
     htmlPresetMaker(f[0...f.length-5])
   end
 elsif input == 7
+  puts "Updating 404 page..."
+  update404
+elsif input == 8
   puts "Updating newindex.html..."
   updateIndex("newindex.html")
   puts "Updating games.html..."
@@ -50,6 +54,8 @@ elsif input == 7
   files.each do |f|
     htmlPresetMaker(f[0...f.length-5])
   end
+  puts "Updating 404 page..."
+  update404
 else
   puts "Unknown thing to update."
   update = false

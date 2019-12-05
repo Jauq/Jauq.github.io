@@ -1,4 +1,4 @@
 !nGames
-@Pentanium
+@Split Space 2017
 #Test for a game of mine with that name.
-$Puzzle
+$Arcade|Shooter
