@@ -116,7 +116,7 @@ def genContent(f, filePath)
   end
 end
 
-def genMediaContent(f, filePath)
+def genMediaContent(f, filePath, genreFilter = nil)
   content = getFileLines(filePath)
   ignore = false
 
@@ -159,7 +159,7 @@ def genMediaContent(f, filePath)
     end
 
     temp = content.index { |x| x.start_with?("%") }
-    pic = "../img/256x128pi.jpg"
+    pic = "/Jauq.github.io/img/256x128pi.jpg"
     if temp != nil
       pic = content[temp]
       pic = pic[1...pic.length]
@@ -168,24 +168,35 @@ def genMediaContent(f, filePath)
 
     page = "/Jauq.github.io/views/" + theme[1...theme.length].downcase + title + ".html"
 
-    f.push("<div class=\"row\">")
-    f.push("  <div class=\"col\">")
-    f.push("    <div class=\"mediaBox #{theme} row\">")
-    f.push("      <a href=\"#{page}\" class=\"col col-auto\"><img src=\"#{pic}\" alt=\"#{title} Thumbnail\"></img></a>")
-    f.push("      <div class=\"mediaContent col-sm-12 col-md\">")
-    f.push("        <h1><a class=\"#{theme}\" href=\"#{page}\">#{title}</a></h1>")
-    f.push("        <p class=\"noMargin\">#{fill}</p>")
-    if genres != []
-      f.push("        <br class=\"showMed\"/>")
-      f.push("        <div class=\"genreTags\">")
-      genres.each do |genre|
-        f.push("          <a class=\"#{theme}\" href=\"/Jauq.github.io/views/#{theme[1...theme.length].downcase}Genre#{genre}.html\">#{genre}</a>")
+    continue = false
+    if genreFilter != nil
+      if genres.include?(genreFilter)
+        continue = true
       end
-      f.push("        </div>")
+    else
+      continue = true
     end
-    f.push("      </div>")
-    f.push("    </div>")
-    f.push("  </div>")
-    f.push("</div>")
+
+    if continue
+      f.push("<div class=\"row\">")
+      f.push("  <div class=\"col\">")
+      f.push("    <div class=\"mediaBox #{theme} row\">")
+      f.push("      <a href=\"#{page}\" class=\"col col-auto\"><img src=\"#{pic}\" alt=\"#{title} Thumbnail\"></img></a>")
+      f.push("      <div class=\"mediaContent col-sm-12 col-md\">")
+      f.push("        <h1><a class=\"#{theme}\" href=\"#{page}\">#{title}</a></h1>")
+      f.push("        <p class=\"noMargin\">#{fill}</p>")
+      if genres != []
+        f.push("        <br class=\"showMed\"/>")
+        f.push("        <div class=\"genreTags\">")
+        genres.each do |genre|
+          f.push("          <a class=\"#{theme}\" href=\"/Jauq.github.io/views/games/genres/#{genre.downcase}.html\">#{genre}</a>")
+        end
+        f.push("        </div>")
+      end
+      f.push("      </div>")
+      f.push("    </div>")
+      f.push("  </div>")
+      f.push("</div>")
+    end
   end
 end
