@@ -73,15 +73,65 @@ def updateGames(filePath = "/Jauq.github.io/views/games.html")
     cm("Main Section")
     $f.push("       <div class=\"container\">"); hn
     if n == 0
-      files.each do |contents|
-        genMediaContent($f, contents); hn
+      files.each do |paths|
+        genMediaContent($f, paths); hn
       end
     elsif n >= 1
-      files.each do |contents|
-        genMediaContent($f, contents, $gamesGenres[n - 1]); hn
+      files.each do |paths|
+        genMediaContent($f, paths, $gamesGenres[n - 1]); hn
       end
     end
     $f.push("       </div>")
+    cm("Main Section", true); hn
+    $f.push("       <script src=\"/Jauq.github.io/presets/footer.js\"></script>"); hn
+    $f.push("     </div>"); hn
+    $f.push("     <script src=\"/Jauq.github.io/scripts/navbarSticky.js\"></script>"); hn
+    $f.push("     <script src=\"/Jauq.github.io/scripts/footerYear.js\"></script>"); hn
+    $f.push("   </body>")
+    $f.push("</html>")
+
+    File.new("#{filePath}", "w+")
+    File.write("#{filePath}", $f.join("\n"), mode: "a")
+
+  end
+
+  files.each do |paths|
+
+    content = getFileLines(paths)
+
+    temp = content.index { |x| x.start_with?("@") }
+    header = nil
+    if temp != nil
+      header = content[temp]
+      header = header[1...header.length]
+      content.delete_at(temp)
+    end
+
+    filePath = "/Jauq.github.io/views/games/#{header}.html"
+
+    $f = []
+
+    $f.push("<!doctype html>")
+    $f.push("<html lang=\"en\">"); hn
+    $f.push("   <script src=\"/Jauq.github.io/presets/head.js\"></script>"); hn
+    $f.push("   <body class=\"gamesBgDeco\">"); hn
+    $f.push("     <script src=\"/Jauq.github.io/presets/gamesJumbo.js\"></script>"); hn
+    $f.push("     <script src=\"/Jauq.github.io/presets/navbar.js\"></script>"); hn
+    $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
+    cm("Main Section")
+=begin
+    $f.push("       <div class=\"container\">"); hn
+    if n == 0
+      files.each do |paths|
+        genMediaContent($f, paths); hn
+      end
+    elsif n >= 1
+      files.each do |paths|
+        genMediaContent($f, paths, $gamesGenres[n - 1]); hn
+      end
+    end
+    $f.push("       </div>")
+=end
     cm("Main Section", true); hn
     $f.push("       <script src=\"/Jauq.github.io/presets/footer.js\"></script>"); hn
     $f.push("     </div>"); hn

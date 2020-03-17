@@ -166,7 +166,7 @@ def genMediaContent(f, filePath, genreFilter = nil)
       content.delete_at(temp)
     end
 
-    page = "/Jauq.github.io/views/" + theme[1...theme.length].downcase + title + ".html"
+    page = "/Jauq.github.io/views/" + theme[1...theme.length].downcase + "/" + title + ".html"
 
     continue = false
     if genreFilter != nil
