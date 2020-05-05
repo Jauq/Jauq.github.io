@@ -1,5 +1,11 @@
 !nGames
 @Split Space 2017
 #Arcade Shooter
+$Published: Jan 16, 2017 | Timeframe: 4-5 Months (not constant)
+*0|Newgrounds|https://www.newgrounds.com/portal/view/687472|_blank
+Split Space 2017 is a vertical scrolling arcade shooter I developed using Stencyl, and it is a flash game.
+The player's goal was to defeat the waves of incoming enemies. There are only five waves, but each one was rather lenghty, had a unique sent of enemies and a boss at the end. The game also has a highscore system built into newgrounds which, as of May 5, 2020, I still hold the all-time highscore of 5,700,675 points.
 
-Test for a game of mine with that name.
+The game was created for the Pixel Day 2017 competition. I, unfortunately, did not earn a podium place, but I did get fourth.
+
+Play it on *0.

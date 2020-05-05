@@ -1,4 +1,12 @@
 !nGames
 @Rotary
 #Puzzle
-Test for a game of mine with that name.
+$Published: Aug 18, 2017 | Timeframe: 7-8 Months (not constant)
+*0|Newgrounds|https://www.newgrounds.com/portal/view/698097|_blank
+Rotary is a puzzle game I developed using Stencyl, and it is a flash game.
+The players goal was to rotate all rotary (clock) hands so that they point in the same direction. It doesn't matter which.
+Differently colored/shaped rotary hands can point differently from others as long as all the hands of the same color/shape point in the same direction. There are a total of 24 levels, 4 of which are challenge levels and much more difficult.
+
+This game is, or at least I consider it to be, the best game I made thus far. Perhaps the music and SFX can be better, but when it comes to the actual game, I think it's fantastatic.
+
+Play it on *0.
