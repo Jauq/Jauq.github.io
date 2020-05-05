@@ -1,4 +1,4 @@
 !nGames
 @Apexyll
-#Test for a game of mine with that name.
-$Puzzle|Adventure
+#Puzzle Adventure
+Test for a game of mine with that name.

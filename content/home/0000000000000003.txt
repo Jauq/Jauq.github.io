@@ -2,5 +2,5 @@
 @Image Time!
 #It's a Bird!
 $11/25/2019
-%0|/jauq.github.io/img/bord.jpg|The bord
+%0|/Jauq.github.io/img/bord.jpg|The bord
  %0 No, This is not the letter "m". It is 100% a real bird.

@@ -1,4 +1,5 @@
 !nGames
 @Split Space 2017
-#Test for a game of mine with that name.
-$Arcade|Shooter
+#Arcade Shooter
+
+Test for a game of mine with that name.

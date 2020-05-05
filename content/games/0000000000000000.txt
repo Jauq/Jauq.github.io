@@ -1,4 +1,5 @@
 !nGames
 @Pentanium
-#Test for a game of mine with that name.
-$Puzzle
+#Puzzle
+$Game was published uh... a while ago.
+Test for a game of mine with that name.
