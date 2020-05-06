@@ -35,9 +35,11 @@ a {
   border-radius: 0px;
   border-style: solid;
   border-width: 2px 2px 8px;
-  padding: 8px 16px;
-  margin: 0 0 24px;
+  padding: 4px 8px;
+  margin: 0 0 12px;
   box-shadow: 0 8px 8px #000000;
+  line-height: 1.2rem;
+  font-size: 14px;
 }
 
 .navBar{
@@ -46,7 +48,7 @@ a {
   border-width: 8px 0 2px;
   border-color: #303030 #303030 #909090;
   height: 48px;
-  margin: 0 0 24px;
+  margin: 0 0 12px;
   z-index: 1;
   box-shadow: 0 10px 8px #000000;
 }
@@ -104,9 +106,10 @@ a {
 }
 
 .bodyBox h1 {
-  margin: 0 0 8px;
+  margin: 0 0 4px;
   text-align: center;
   font-variant: small-caps;
+  font-size: 24px;
 }
 .mediaBox h1 {
   margin: 0 0 4px;

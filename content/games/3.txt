@@ -1,0 +1,11 @@
+!nGames
+@Apexyll
+#Puzzle Adventure
+$Published: Jan 23, 2019
+*0|Newgrounds|https://www.newgrounds.com/portal/view/725094|_blank
+Apexyll is a puzzle platforming adventure game I developed using Stencyl. It is a flash game. My last flash game.
+The player's goal was to hop around this alien environment solving puzzles and playing games on panels to progress. Subtly inspired by The Witness, each panel had a different level from one of two minigames, TOKEN and BitSpace. BitSpace is inspired by one of my previous games Split Space 2017, and TOKEN is just a basic slide puzzle game.
+
+The game was created for Pixel Day 2019. I unfortunately did not get a significant place. This game did mark a good milestone for my skills though.
+
+Play it on *0.

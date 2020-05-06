@@ -24,8 +24,18 @@ class Content
 
   def createContent(folder)
 
-    prevEntryCount = Dir.glob("../content/#{folder}/*.txt").count
-    fileName = "#{"0" * (16 - prevEntryCount.to_s.length)}#{prevEntryCount}.txt"
+    #prevEntryCount = Dir.glob("../content/#{folder}/*.txt").count
+    #fileName = "#{"0" * (16 - prevEntryCount.to_s.length)}#{prevEntryCount}.txt"
+
+    prevEntries = Dir.glob("../content/#{folder}/*.txt")
+    highestID = 0
+    prevEntries.each do |entry|
+      temp = entry.split("/")[-1].split(".")[0].to_i
+      if temp > highestID
+        highestID = temp
+      end
+    end
+    fileName = "#{highestID+1}.txt"
 
     File.open("../content/#{folder}/#{fileName}", "w+") do |f|
       f.puts("!n" + @theme)

@@ -17,10 +17,47 @@ def htmlPresetMaker(filePath)
 
 end
 
+def shrinkFilePathForID(filePath)
+  id = filePath.split("/")
+  id = id[-1].split(".")
+  id = id[0]
+  return id
+end
+
+def organizeContentFiles(files)
+  #files should be an array of strings where each string is the filepath to the content in question.
+  #This hash will help identify the id number of the content
+  sortHash = {}
+  files.each do |file|
+    #First the filepath is split by slashes
+    file = file.split("/")
+    #Since content text file needs to be the last thing, this splits the last part of the filepath by the .
+    file[-1] = file[-1].split(".")
+    #Setting temporary variable to the interger version of the content id
+    temp = file[-1][0].to_i
+    #Next I rejoin the id number and txt with a .
+    file[-1] = file[-1].join(".")
+    #Lastly the sortHash sets a key with the integer id, then sets the value to the whole filepath string again
+    sortHash[temp] = file.join("/")
+  end
+  #The sorthash is then sorted, becoming a nested array
+  sortHash = sortHash.sort
+  #A new array is created to hold the final sorted filepath array
+  newArray = []
+  sortHash.each do |key|
+    #we only want the string, not the id, the id was only for sorting
+    newArray.push(key[1])
+  end
+  #finally, reverse the array so that the biggest number (newest content) shows up on top
+  newArray = newArray.reverse
+  #puts newArray
+  return newArray
+end
+
 def updateIndex(filePath = "/Jauq.github.io/index.html")
 
   files = getFiles("/Jauq.github.io/content/home")
-  files = files.reverse
+  files = organizeContentFiles(files)
 
   $f = []
 
@@ -58,7 +95,7 @@ end
 def updateGames(filePath = "/Jauq.github.io/views/games.html")
 
   files = getFiles("/Jauq.github.io/content/games")
-  files = files.reverse
+  files = organizeContentFiles(files)
 
   $gamesGenres = getFileLines("/Jauq.github.io/content/gamesGenres.txt")
 
@@ -151,7 +188,7 @@ end
 def updateMusic(filePath = "/Jauq.github.io/views/music.html")
 
   files = getFiles("/Jauq.github.io/content/music")
-  files = files.reverse
+  files = organizeContentFiles(files)
 
   $f = []
 
@@ -184,7 +221,7 @@ end
 def updateArt(filePath = "/Jauq.github.io/views/art.html")
 
   files = getFiles("/Jauq.github.io/content/art")
-  files = files.reverse
+  files = organizeContentFiles(files)
 
   $f = []
 
@@ -217,7 +254,7 @@ end
 def updateMisc(filePath = "/Jauq.github.io/views/misc.html")
 
   files = getFiles("/Jauq.github.io/content/misc")
-  files = files.reverse
+  files = organizeContentFiles(files)
 
   $f = []
 

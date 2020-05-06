@@ -1,0 +1,10 @@
+!nGames
+@Pentanium
+#Puzzle
+$Published: Mar 11, 2016
+*0|Newgrounds|https://www.newgrounds.com/portal/view/671715|_blank
+Pentanium is a short puzzle game I developed using Stencyl. It is a flash game.
+The player's goal is to elimiate all pentagons on the grid. The player can select any two adjacent pentagons to remove them. However, it is not that simple. Pentagons come in all different flavors and do different things when removed. Additionally, the first selected pentagon always moves to the second selected pentagon's position. It has 7 kinds of pentagons and 26 levels.
+
+Play it on *0.
+
