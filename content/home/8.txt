@@ -1,7 +1,7 @@
 !nHome
 @Mega Link Testing
 #Yep!
-$11/25/2019
+$November 25, 2019
 *0|my GitHub page|https://github.com/jauq|_blank
 *1|several|/Jauq.github.io/views/games.html
 *2|links|/Jauq.github.io/views/music.html
