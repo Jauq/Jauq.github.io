@@ -414,10 +414,13 @@ a {
     margin-bottom: -32px;
   }
   .footerBar {
-    height: 64px;
+    height: 6rem;
   }
   .footerBar p {
     top: 0px;
     font-size: 12px;
+  }
+  .footerBar .container {
+    margin-top: 0;
   }
 }
