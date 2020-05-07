@@ -9,7 +9,8 @@ puts "[4] art"
 puts "[5] misc"
 puts "[6] presets"
 puts "[7] 404 page"
-puts "[8] all"
+puts "[8] info page"
+puts "[9] all"
 
 print "\nType the id of what you want to update:  "
 input = gets.chomp.to_i
@@ -39,6 +40,9 @@ elsif input == 7
   puts "Updating 404 page..."
   update404
 elsif input == 8
+  puts "Updating info page..."
+  updateInfo
+elsif input == 9
   puts "Updating newindex.html..."
   updateIndex("../newindex.html")
   puts "Updating games.html..."
@@ -56,6 +60,8 @@ elsif input == 8
   end
   puts "Updating 404 page..."
   update404
+  puts "Updating info page..."
+  updateInfo
 else
   puts "Unknown thing to update."
   update = false

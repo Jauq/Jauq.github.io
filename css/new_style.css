@@ -17,7 +17,7 @@ body{
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
   min-height: 100%;
   background-color: #303030;
   backface-visibility: hidden;
@@ -266,7 +266,7 @@ a {
 
 .footerBar {
   width: 100%;
-  height: 128px;
+  height: 10rem;
   background-color: #1c1c1c;
   border-color: #909090 #1c1c1c #303030;
   border-style: solid;
@@ -281,6 +281,29 @@ a {
   bottom: 0;
   left: 0;
   padding: 1rem;
+}
+.footerBar a {
+  display: inline;
+  font-weight: 500;
+  color: #d0d0d0;
+  transition:
+    color 0.2s ease;
+}
+.footerBar a:hover,
+.footerBar a:active,
+.footerBar a:hover,
+.footerBar a:active {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footerBar p {
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+}
+.footerBar .container {
+  margin-top: 30px;
 }
 
 .noMargin {
@@ -297,12 +320,6 @@ a {
   100% {border-top-color: #e0a040; color: #e0a040;}
 }
 */
-
-.footerBar p {
-  margin: 0;
-  position: relative;
-  top: 30px;
-}
 
 @media (max-width: 816px) {
   .navObject {

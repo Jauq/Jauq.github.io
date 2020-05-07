@@ -312,3 +312,33 @@ def update404(filePath = "/Jauq.github.io/404.html")
   File.write("#{filePath}", $f.join("\n"), mode: "a")
 
 end
+
+def updateInfo(filePath = "/Jauq.github.io/info.html")
+
+  $f = []
+
+  $f.push("<!doctype html>")
+  $f.push("<html lang=\"en\">"); hn
+  $f.push("   <script src=\"/Jauq.github.io/presets/head.js\"></script>"); hn
+  $f.push("   <body class=\"homeBgDeco\">"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/miscJumbo.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/presets/navbar.js\"></script>"); hn
+  $f.push("     <div class=\"afterScroll fluidBlocks\">"); hn
+
+  cm("Main Section")
+  $f.push("       <div class=\"container\">"); hn
+  genContent($f, "/Jauq.github.io/content/aboutBlock.txt"); hn
+  genContent($f, "/Jauq.github.io/content/contactBlock.txt"); hn
+  $f.push("       </div>")
+  cm("Main Section", true); hn
+  $f.push("       <script src=\"/Jauq.github.io/presets/footer.js\"></script>"); hn
+  $f.push("     </div>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/navbarSticky.js\"></script>"); hn
+  $f.push("     <script src=\"/Jauq.github.io/scripts/footerYear.js\"></script>"); hn
+  $f.push("   </body>")
+  $f.push("</html>")
+
+  File.new("#{filePath}", "w+")
+  File.write("#{filePath}", $f.join("\n"), mode: "a")
+
+end
