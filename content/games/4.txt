@@ -1,0 +1,11 @@
+!nGames
+@Broken Guns
+#Arcade Shooter
+$Published: May 15, 2020
+*0|Newgrounds|https://www.newgrounds.com/portal/view/755250|_blank
+Broken Guns is an arcade run n' gun platforming shooter I developed using Construct 3. It is made in HTML5. My first HTML5 game.
+The player takes control of Captain Blue Dude in his goal of protecting his planet by destroying bombs all while defending himself from an army of alien baddies. There are 5 enemy types (yes really).
+
+This game was made in 48 hours (plus 2 hours for bugfixes and newgrounds highscores). The theme was backwards (hence the name the of the game). For what gamejam you ask? None, there is no game jam. This was a test to prepare me for the upcoming GMTK Gamejam 2020. I wanted to test my own game making skills, plus I need to learn how to use Construct 3 better.
+
+Play it on *0.
