@@ -9,9 +9,9 @@
 *5|Gravit Designer|https://designer.gravit.io/|_blank
 *6|Atom|https://atom.io/|_blank
 *7|Notepad++|https://notepad-plus-plus.org/|_blank
+%0|/Jauq.github.io/img/proglangs.jpg|Programming Languages Images
 My name is Tim Anfilofieff. I am a creative person and I like to create things. I focus on interactive entertainment, also know as games. Specifically the digital or video kind. I also do graphic design and think I do well, and I also have a passion for character design. Additionally I have composed music of many kinds.
-
-I am well versed in the Ruby programming language and the web development stack (HTML, CSS, JS). I also know a bit of C#, SQL, Python and Lua. I use GitHub for version control. I have some experience with T-Foundation Server. My go to IDE is *6 but I have experience with *7 as well.
+%0 I am well versed in the Ruby programming language and the web development stack (HTML, CSS, JS). I also know a bit of C#, SQL, Python and Lua. I use GitHub for version control. I have some experience with T-Foundation Server. My go to IDE is *6 but I have experience with *7 as well.
 
 I have experience using the *0 and *1 programs to develop games and have used them for multiple applications. I am currently sticking to *1.
 
