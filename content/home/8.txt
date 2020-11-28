@@ -2,9 +2,9 @@
 @Mega Link Testing
 #Yep!
 $November 25, 2019
-*0|my GitHub page|https://github.com/jauq|_blank
-*1|several|/Jauq.github.io/views/games.html
-*2|links|/Jauq.github.io/views/music.html
-*3|various|/Jauq.github.io/views/art.html
-*4|pages|/Jauq.github.io/views/misc.html
+*0|my GitHub page|https://github.com/jauqgames|_blank
+*1|several|/JauqGames.github.io/views/games.html
+*2|links|/JauqGames.github.io/views/music.html
+*3|various|/JauqGames.github.io/views/art.html
+*4|pages|/JauqGames.github.io/views/misc.html
 You better believe I'm trying to get links inside of the blocks, all auto-generated from ruby scripts. Check it out on *0. Also here are *1 *2 to my *3 *4.

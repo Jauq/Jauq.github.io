@@ -1,0 +1,5 @@
+!nHome
+@Transition
+#Rebranding from Jauq to JauqGames
+$Nov 27, 2020
+Everywhere I exist I've been rebranding from Jauq to JauqGames, and this website was no excpetion. Did cause a few issues with the code though. I hope everything still works perfectly.

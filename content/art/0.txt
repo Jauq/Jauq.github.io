@@ -1,8 +1,8 @@
 !nArt
 @Grids of Artwork
 #Who Doesn't Love Grids?
-$Updated: 5/5/2020
-*0|Newgrounds|https://jauqar.newgrounds.com/art|_blank
-*1|DeviantArt|https://www.deviantart.com/jauqar|_blank
+$Updated: 11/27/2020
+*0|Newgrounds|https://jauqgames.newgrounds.com/art|_blank
+*1|DeviantArt|https://www.deviantart.com/jauqgames|_blank
 Imagine a matrix of drawings, sketches, tilesets, logos and more. I'll probably steal Newgrounds' square thumbnail design for my site, it just works. All the art you see on this site was created by me unless specified otherwise. To find my other art you could either go to *0 or my *1 page. DeviantArt has more stuff.
 This page will probably be like this for a while

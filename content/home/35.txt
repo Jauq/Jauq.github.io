@@ -2,5 +2,5 @@
 @About and Contact Page
 #Not Quite Done.
 $May 7, 2020
-*0|About and Contact|/Jauq.github.io/info.html|_self
+*0|About and Contact|/JauqGames.github.io/info.html|_self
 There it is, now it exists. My *0 page can now be accessed. It isn't done just yet though. Still need to fill it out. While on this topic though, my website's footer now has links to that page. Check it out!

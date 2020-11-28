@@ -217,34 +217,34 @@ a {
   background-size: contain;
 }
 .homeBgImage {
-  background-image: url("/Jauq.github.io/img/homeBanner.jpg");
+  background-image: url("/JauqGames.github.io/img/homeBanner.jpg");
 }
 .homeBgDeco {
-  background-image: url("/Jauq.github.io/img/portfolioDiamonds2.jpg")
+  background-image: url("/JauqGames.github.io/img/portfolioDiamonds2.jpg")
 }
 .gamesBgImage {
-  background-image: url("/Jauq.github.io/img/gamesBanner.jpg");
+  background-image: url("/JauqGames.github.io/img/gamesBanner.jpg");
 }
 .gamesBgDeco {
-  background-image: url("/Jauq.github.io/img/portfolioDiamonds2.jpg")
+  background-image: url("/JauqGames.github.io/img/portfolioDiamonds2.jpg")
 }
 .musicBgImage {
-  background-image: url("/Jauq.github.io/img/musicBanner.jpg");
+  background-image: url("/JauqGames.github.io/img/musicBanner.jpg");
 }
 .musicBgDeco {
-  background-image: url("/Jauq.github.io/img/portfolioDiamonds2.jpg")
+  background-image: url("/JauqGames.github.io/img/portfolioDiamonds2.jpg")
 }
 .artBgImage {
-  background-image: url("/Jauq.github.io/img/artBanner.jpg");
+  background-image: url("/JauqGames.github.io/img/artBanner.jpg");
 }
 .artBgDeco {
-  background-image: url("/Jauq.github.io/img/portfolioDiamonds2.jpg")
+  background-image: url("/JauqGames.github.io/img/portfolioDiamonds2.jpg")
 }
 .miscBgImage {
-  background-image: url("/Jauq.github.io/img/miscBanner.jpg");
+  background-image: url("/JauqGames.github.io/img/miscBanner.jpg");
 }
 .miscBgDeco {
-  background-image: url("/Jauq.github.io/img/portfolioDiamonds2.jpg")
+  background-image: url("/JauqGames.github.io/img/portfolioDiamonds2.jpg")
 }
 .bgImage .repeatBgImage {
   background-repeat: repeat-x;

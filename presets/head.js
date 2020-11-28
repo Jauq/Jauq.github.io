@@ -15,10 +15,10 @@ document.write('\
   <!-- \Bootstrap CSS -->\
 \
   <!-- My CSS -->\
-  <link rel="stylesheet" href="/Jauq.github.io/css/new_style.css">\
+  <link rel="stylesheet" href="/JauqGames.github.io/css/new_style.css">\
   <!-- \My CSS -->\
 \
-  <link rel="icon" href="/Jauq.github.io/img/icon.png">\
+  <link rel="icon" href="/JauqGames.github.io/img/icon.png">\
 \
   </head>\
   <!-- /Head -->\
