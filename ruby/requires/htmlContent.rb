@@ -88,7 +88,7 @@ def genContent(f, filePath)
     #*a|b|c|d
     #Where a is the unique number located in the body text, b is the link to the image, c is alt text, and d is the link
     #d is optional
-    #example: %0|/JauqGames.github.io/img/bord.jpg|The bord
+    #example: %0|./img/bord.jpg|The bord
     #This would replace %0 in the body text with that image.
     loop do
       temp = content.index { |x| x.start_with?("%") }
@@ -186,14 +186,14 @@ def genMediaContent(f, filePath, genreFilter = nil)
     end
 
     temp = content.index { |x| x.start_with?("%") }
-    pic = "/JauqGames.github.io/img/256x128pi.jpg"
+    pic = "./img/256x128pi.jpg"
     if temp != nil
       pic = content[temp]
       pic = pic[1...pic.length]
       content.delete_at(temp)
     end
 
-    page = "/JauqGames.github.io/views/" + theme[1...theme.length].downcase + "/" + title + ".html"
+    page = "./views/" + theme[1...theme.length].downcase + "/" + title + ".html"
 
     continue = false
     if genreFilter != nil
