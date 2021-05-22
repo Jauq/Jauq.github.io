@@ -131,7 +131,7 @@ def updateGames(filePath = "/JauqGames.github.io/views/games.html")
 =end
     $f.push("       </div>")
     cm("Main Section", true); hn
-    $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
+    $f.push("       <script src=\"../presets/otherFooter.js\"></script>"); hn
     $f.push("     </div>"); hn
     $f.push("     <script src=\"../scripts/navbarSticky.js\"></script>"); hn
     $f.push("     <script src=\"../scripts/footerYear.js\"></script>"); hn
@@ -206,7 +206,7 @@ def updateMusic(filePath = "/JauqGames.github.io/views/music.html")
   end
   $f.push("       </div>")
   cm("Main Section", true); hn
-  $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"../presets/otherFooter.js\"></script>"); hn
   $f.push("     </div>"); hn
   $f.push("     <script src=\"../scripts/navbarSticky.js\"></script>"); hn
   $f.push("     <script src=\"../scripts/footerYear.js\"></script>"); hn
@@ -239,7 +239,7 @@ def updateArt(filePath = "/JauqGames.github.io/views/art.html")
   end
   $f.push("       </div>")
   cm("Main Section", true); hn
-  $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"../presets/otherFooter.js\"></script>"); hn
   $f.push("     </div>"); hn
   $f.push("     <script src=\"../scripts/navbarSticky.js\"></script>"); hn
   $f.push("     <script src=\"../scripts/footerYear.js\"></script>"); hn
@@ -272,7 +272,7 @@ def updateMisc(filePath = "/JauqGames.github.io/views/misc.html")
   end
   $f.push("       </div>")
   cm("Main Section", true); hn
-  $f.push("       <script src=\"../presets/footer.js\"></script>"); hn
+  $f.push("       <script src=\"../presets/otherFooter.js\"></script>"); hn
   $f.push("     </div>"); hn
   $f.push("     <script src=\"../scripts/navbarSticky.js\"></script>"); hn
   $f.push("     <script src=\"../scripts/footerYear.js\"></script>"); hn
