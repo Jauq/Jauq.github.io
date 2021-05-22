@@ -8,10 +8,10 @@ document.write('\
             <div class="row">\
               <div class="col-3">\
                 <p>\
-                  <a href="/JauqGames.github.io/info.html">About</a>\
+                  <a href="./info.html">About</a>\
                 </p>\
                 <p>\
-                  <a href="/JauqGames.github.io/info.html">Contact</a>\
+                  <a href="./info.html">Contact</a>\
                 </p>\
               </div>\
               <div class="col-3">\
